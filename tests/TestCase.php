@@ -37,12 +37,8 @@ abstract class TestCase extends BaseTestCase
         Directory::ensureDirectory($this->langPath(Locales::ENGLISH));
     }
 
-    protected function langPath($locale = null): string
+    protected function langPath(?Locales $locale = null): string
     {
-        if (is_dir($path = base_path('lang/' . $locale))) {
-            return $path;
-        }
-
-        return resource_path('lang/' . $locale);
+        return lang_path($locale->value ?? '');
     }
 }

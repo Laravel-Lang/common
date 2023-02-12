@@ -67,17 +67,8 @@ class CommonTest extends TestCase
         $this->testAdd();
 
         $this->artisan('lang:reset')
-            ->expectsConfirmation('Do you want to reset all localizations?', 'yes')
+            ->expectsConfirmation('Are you sure you want to reset localization files?', 'yes')
             ->assertExitCode(0);
-
-        $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
-        $this->assertDirectoryExists($this->langPath(Locales::AFRIKAANS));
-        $this->assertDirectoryExists($this->langPath(Locales::ALBANIAN));
-        $this->assertDirectoryExists($this->langPath(Locales::ARABIC));
-
-        $this->artisan('lang:reset', [
-            'locales' => Locales::ALBANIAN,
-        ])->assertExitCode(0);
 
         $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
         $this->assertDirectoryExists($this->langPath(Locales::AFRIKAANS));
