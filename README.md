@@ -35,7 +35,7 @@ Or manually update `require` block of `composer.json` and run the `composer upda
 
 ## License
 
-This package is licensed under the [MIT License](LICENSE.md).
+This package is licensed under the [MIT License](LICENSE).
 
 
 [badge_build]:          https://img.shields.io/github/actions/workflow/status/laravel-lang/common/phpunit.yml?style=flat-square
