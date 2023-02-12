@@ -16,8 +16,8 @@
         "lang",
         "publisher",
         "http",
-        "statuses",
-        "http-statuses",
+        "http-status-code",
+        "http-status",
         "attribute",
         "attributes"
     ],
