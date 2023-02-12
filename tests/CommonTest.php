@@ -50,8 +50,6 @@ class CommonTest extends TestCase
         $this->assertDirectoryDoesNotExist($this->langPath(Locales::ALBANIAN));
         $this->assertDirectoryDoesNotExist($this->langPath(Locales::ARABIC));
 
-        //
-
         $this->testAdd();
 
         $this->artisan('lang:rm', [
