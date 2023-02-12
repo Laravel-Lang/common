@@ -17,7 +17,7 @@ class CommonTest extends TestCase
 
         $this->artisan('lang:add', [
             'locales' => [Locales::AFRIKAANS, Locales::ALBANIAN, Locales::ARABIC],
-        ])->assertSuccessful();
+        ])->assertExitCode(0);
 
         $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
         $this->assertDirectoryExists($this->langPath(Locales::AFRIKAANS));
@@ -29,7 +29,7 @@ class CommonTest extends TestCase
     {
         $this->testAdd();
 
-        $this->artisan('lang:update')->assertSuccessful();
+        $this->artisan('lang:update')->assertExitCode(0);
 
         $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
         $this->assertDirectoryExists($this->langPath(Locales::AFRIKAANS));
@@ -43,7 +43,7 @@ class CommonTest extends TestCase
 
         $this->artisan('lang:rm')
             ->expectsConfirmation('Do you want to remove all localizations?', 'yes')
-            ->assertSuccessful();
+            ->assertExitCode(0);
 
         $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
         $this->assertDirectoryDoesNotExist($this->langPath(Locales::AFRIKAANS));
@@ -54,7 +54,7 @@ class CommonTest extends TestCase
 
         $this->artisan('lang:rm', [
             'locales' => Locales::ALBANIAN,
-        ])->assertSuccessful();
+        ])->assertExitCode(0);
 
         $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
         $this->assertDirectoryExists($this->langPath(Locales::AFRIKAANS));
@@ -68,7 +68,7 @@ class CommonTest extends TestCase
 
         $this->artisan('lang:reset')
             ->expectsConfirmation('Do you want to reset all localizations?', 'yes')
-            ->assertSuccessful();
+            ->assertExitCode(0);
 
         $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
         $this->assertDirectoryExists($this->langPath(Locales::AFRIKAANS));
@@ -77,7 +77,7 @@ class CommonTest extends TestCase
 
         $this->artisan('lang:reset', [
             'locales' => Locales::ALBANIAN,
-        ])->assertSuccessful();
+        ])->assertExitCode(0);
 
         $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
         $this->assertDirectoryExists($this->langPath(Locales::AFRIKAANS));
