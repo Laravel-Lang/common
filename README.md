@@ -29,11 +29,9 @@ Or manually update `require` block of `composer.json` and run the `composer upda
 
 ## Compatibility
 
-| Laravel, Lumen | PHP                | Package Version |
-|----------------|--------------------|-----------------|
-| 8.x, 9.x, 10.x | 8.1, 8.2           | ^3.0            |
-| 7.x, 8.x, 9.x  | 8.0, 8.1           | ^2.0            |
-| 7.x, 8.x, 9.x  | 7.3, 7.4, 8.0, 8.1 | ^1.0            |
+| Laravel, Lumen | PHP                | Package Version                             | What packages will be installed                              |
+|----------------|--------------------|---------------------------------------------|--------------------------------------------------------------|
+| 7.x, 8.x, 9.x  | 7.3, 7.4, 8.0, 8.1 | `composer require laravel-lang/common:^1.0` | Publisher 12.x, Lang 10.x, Attributes 1.x, HTTP Statuses 2.x |
 
 ## License
 

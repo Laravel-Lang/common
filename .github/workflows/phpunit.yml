@@ -13,15 +13,14 @@ jobs:
             matrix:
                 php: [ "7.3", "7.4", "8.0", "8.1" ]
                 laravel: [ "7.0", "8.0", "9.0" ]
-                prefer: [ "lowest", "stable" ]
                 exclude:
-                    - laravel: "9.0"
-                      php: 7.3
+                    -   laravel: "9.0"
+                        php: 7.3
 
-                    - laravel: "9.0"
-                      php: 7.4
+                    -   laravel: "9.0"
+                        php: 7.4
 
-        name: PHP ${{ matrix.php }}, Laravel ${{ matrix.laravel }} ${{ matrix.prefer }}
+        name: PHP ${{ matrix.php }}, Laravel ${{ matrix.laravel }}
 
         steps:
             -   name: Checkout code
@@ -37,7 +36,7 @@ jobs:
                     COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
             -   name: Install dependencies
-                run: composer require laravel/framework:^${{ matrix.laravel }} --prefer-${{ matrix.prefer }}
+                run: composer require laravel/framework:^${{ matrix.laravel }}
 
             -   name: Execute tests
                 run: sudo vendor/bin/phpunit
