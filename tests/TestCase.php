@@ -8,6 +8,7 @@ use DragonCode\Support\Facades\Helpers\Filesystem\Directory;
 use LaravelLang\Attributes\ServiceProvider as AttributesServiceProvider;
 use LaravelLang\HttpStatuses\ServiceProvider as HttpStatusesServiceProvider;
 use LaravelLang\Lang\ServiceProvider as LangServiceProvider;
+use LaravelLang\Publisher\Constants\Locales;
 use LaravelLang\Publisher\ServiceProvider as PublisherServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
@@ -32,7 +33,16 @@ abstract class TestCase extends BaseTestCase
 
     protected function cleanUp(): void
     {
-        Directory::ensureDelete(lang_path());
-        Directory::ensureDirectory(lang_path('en'));
+        Directory::ensureDelete($this->langPath());
+        Directory::ensureDirectory($this->langPath(Locales::ENGLISH));
+    }
+
+    protected function langPath($locale = null): string
+    {
+        if (is_dir($path = base_path('lang/' . $locale))) {
+            return $path;
+        }
+
+        return resource_path('lang/' . $locale);
     }
 }
