@@ -1,0 +1,61 @@
+{
+    "name": "laravel-lang/common",
+    "description": "Easily connect the necessary language packs to the application",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "laravel-lang",
+        "translation",
+        "translations",
+        "laravel",
+        "languages",
+        "locales",
+        "locale",
+        "i18n",
+        "lang"
+    ],
+    "authors": [
+        {
+            "name": "Laravel-Lang Team",
+            "homepage": "https://github.com/Laravel-Lang"
+        },
+        {
+            "name": "Andrey Helldar",
+            "email": "helldar@dragon-code.pro",
+            "homepage": "https://github.com/andrey-helldar"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Laravel-Lang/common/issues",
+        "source": "https://github.com/Laravel-Lang/common"
+    },
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "illuminate/translation": "^7.0 || ^8.0 || ^9.0",
+        "laravel-lang/attributes": "^1.0",
+        "laravel-lang/lang": "^10.0",
+        "laravel-lang/publisher": "^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0 || ^6.0 || ^7.0",
+        "phpunit/phpunit": "^9.6",
+        "symfony/var-dumper": "^5.3 || ^6.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "ergebnis/composer-normalize": true,
+            "dragon-code/codestyler": true,
+            "friendsofphp/php-cs-fixer": true
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
