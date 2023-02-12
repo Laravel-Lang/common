@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use DragonCode\Support\Facades\Helpers\Filesystem\Directory;
+use DragonCode\Support\Facades\Filesystem\Directory;
 use LaravelLang\Attributes\ServiceProvider as AttributesServiceProvider;
 use LaravelLang\HttpStatuses\ServiceProvider as HttpStatusesServiceProvider;
 use LaravelLang\Lang\ServiceProvider as LangServiceProvider;
