@@ -22,7 +22,7 @@ Or manually update `require` block of `composer.json` and run the `composer upda
 ```json
 {
     "require": {
-        "laravel-lang/common": "^1.0"
+        "laravel-lang/common": "^2.0"
     }
 }
 ```
@@ -31,6 +31,7 @@ Or manually update `require` block of `composer.json` and run the `composer upda
 
 | Laravel, Lumen | PHP                | Package Version                             | What packages will be installed                              |
 |----------------|--------------------|---------------------------------------------|--------------------------------------------------------------|
+| 7.x, 8.x, 9.x  | 8.0, 8.1           | `composer require laravel-lang/common:^2.0` | Publisher 13.x, Lang 10.x, Attributes 1.x, HTTP Statuses 2.x |
 | 7.x, 8.x, 9.x  | 7.3, 7.4, 8.0, 8.1 | `composer require laravel-lang/common:^1.0` | Publisher 12.x, Lang 10.x, Attributes 1.x, HTTP Statuses 2.x |
 
 ## License
