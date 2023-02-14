@@ -38,14 +38,14 @@
     },
     "require": {
         "php": "^8.0",
-        "illuminate/translation": "^8.0 || ^9.0",
+        "illuminate/translation": "^8.0 || ^9.0 || ^10.0",
         "laravel-lang/attributes": "^2.0",
         "laravel-lang/http-statuses": "^3.0",
         "laravel-lang/lang": "^12.0",
         "laravel-lang/publisher": "^14.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.0 || ^7.0",
+        "orchestra/testbench": "^6.0 || ^7.0 || ^8.0",
         "phpunit/phpunit": "^9.6",
         "symfony/var-dumper": "^5.4 || ^6.0"
     },
