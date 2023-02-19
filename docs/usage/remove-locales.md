@@ -6,13 +6,13 @@
 
 To delete localizations, you must use `lang:rm` command, passing the letter abbreviations into it:
 
-```bash
+```bash:no-line-numbers
 php artisan lang:rm de ro zh-CN
 ```
 
 If you do not specify arguments when passing parameters, then an interactive question will be displayed in the console with a choice of localizations from among the available ones.
 
-```bash
+```bash:no-line-numbers
 php artisan lang:rm
 ```
 
@@ -22,6 +22,6 @@ Protected locales are the set codes in the `locale` and `fallback_locale` parame
 
 To force the deletion of a protected localization, use the `force` option:
 
-```bash
+```bash:no-line-numbers
 php artisan lang:rm en --force
 ```

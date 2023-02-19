@@ -28,10 +28,10 @@ composer require --dev laravel-lang/common
 
 Now you can manage localizations:
 
-* Add
-* Update
-* Reset
-* Remove
+* [Add locale](../usage/add-locales.md)
+* [Update locale](../usage/update-locales.md)
+* [Reset locale](../usage/reset-locales.md)
+* [Remove locale](../usage/remove-locales.md)
 
 ## Alternative
 

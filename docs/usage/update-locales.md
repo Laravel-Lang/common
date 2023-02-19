@@ -4,6 +4,6 @@ When executing the `php artisan lang:update` command, the package learns which l
 
 Command to run:
 
-```bash
+```bash:no-line-numbers
 php artisan lang:update
 ```
