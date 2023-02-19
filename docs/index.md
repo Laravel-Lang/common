@@ -8,33 +8,44 @@
 [![Github Workflow Status][badge_build]][link_build]
 [![License][badge_license]][link_license]
 
-In this repository, you can find the lang files for
-the [Laravel Framework](https://laravel.com), [Laravel Jetstream](https://jetstream.laravel.com), [Laravel Fortify](https://github.com/laravel/fortify), [Laravel Cashier](https://laravel.com/docs/billing), [Laravel Breeze](https://github.com/laravel/breeze), [Laravel Nova](https://nova.laravel.com), [Laravel Spark](https://spark.laravel.com)
-and [Laravel UI](https://github.com/laravel/ui).
 
-### Quick Start
+## Support Projects
 
-```bash:no-line-numbers
-composer require laravel-lang/common --dev
+* [Laravel Framework](https://laravel.com)
+* [Laravel Jetstream](https://jetstream.laravel.com)
+* [Laravel Fortify](https://github.com/laravel/fortify)
+* [Laravel Cashier](https://laravel.com/docs/billing)
+* [Laravel Breeze](https://github.com/laravel/breeze)
+* [Laravel Nova](https://nova.laravel.com)
+* [Laravel Spark](https://spark.laravel.com)
+* [Laravel UI](https://github.com/laravel/ui)
+* and other
 
-php artisan lang:add fr
+## Documentation, Installation, and Usage Instructions
 
-php artisan lang:update
-```
+See the documentation for detailed [installation](installation/index.md) and [usage](usage/index.md) instructions.
+
+## Contributing
+
+Please see [CONTRIBUTING](contributing.md) for details.
+
+## License
+
+This package is licensed under the [MIT License][link_license].
 
 
-[badge_build]:          https://img.shields.io/github/actions/workflow/status/laravel-lang/lang/phpunit.yml?branch=main&style=flat-square
+[badge_build]:          https://img.shields.io/github/actions/workflow/status/laravel-lang/common/phpunit.yml?branch=main&style=flat-square
 
 [badge_downloads]:      https://img.shields.io/packagist/dt/laravel-lang/lang.svg?style=flat-square
 
-[badge_license]:        https://img.shields.io/packagist/l/laravel-lang/lang.svg?style=flat-square
+[badge_license]:        https://img.shields.io/packagist/l/laravel-lang/common.svg?style=flat-square
 
-[badge_stable]:         https://img.shields.io/github/v/release/laravel-lang/lang?label=stable&style=flat-square
+[badge_stable]:         https://img.shields.io/github/v/release/laravel-lang/common?label=stable&style=flat-square
 
 [badge_unstable]:       https://img.shields.io/badge/unstable-dev--main-orange?style=flat-square
 
-[link_build]:           https://github.com/laravel-lang/lang/actions
+[link_build]:           https://github.com/laravel-lang/common/actions
 
-[link_license]:         https://github.com/Laravel-Lang/lang/blob/main/LICENSE.md
+[link_license]:         license.md
 
-[link_packagist]:       https://packagist.org/packages/laravel-lang/lang
+[link_packagist]:       https://packagist.org/packages/laravel-lang/common

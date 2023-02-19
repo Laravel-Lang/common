@@ -1,5 +1,15 @@
 # Installation
 
+## Quick Start
+
+```bash:no-line-numbers
+composer require laravel-lang/common --dev
+
+php artisan lang:add fr
+
+php artisan lang:update
+```
+
 ## Recommended
 
 To get the latest version of `Laravel Lang: Common`, simply require the project using [Composer](https://getcomposer.org):
@@ -25,7 +35,7 @@ Now you can manage localizations:
 
 ## Alternative
 
-You can also install certain packages (check the [compatibility table](compatibility/index.md)):
+You can also install certain packages (check the [compatibility tables](compatibility/index.md)):
 
 ```bash:no-line-numbers
 composer require --dev laravel-lang/publisher
