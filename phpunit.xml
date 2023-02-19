@@ -20,7 +20,7 @@
          cacheResult="false"
          backupGlobals="false"
          backupStaticAttributes="false"
-         bootstrap="phpunit.php"
+         bootstrap="vendor/autoload.php"
          colors="true"
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
