@@ -2,12 +2,19 @@
 
 ## Recommended
 
-To get latest versions of `Laravel Lang: Lang`, `Laravel Lang: Attributes`, `Laravel Lang: HTTP Statuses` and `Laravel Lang: Publisher` simplify require the package
-using [Composer](https://getcomposer.org): 
+To get the latest version of `Laravel Lang: Common`, simply require the project using [Composer](https://getcomposer.org):
 
 ```bash:no-line-numbers
 composer require --dev laravel-lang/common
 ```
+
+> Note
+> 
+> If you are using the list of localizations from the `Laravel Lang: Publisher` package in production, then use this command instead:
+> 
+> ```bash:no-line-numbers
+> composer require laravel-lang/common
+> ```
 
 Now you can manage localizations:
 
@@ -18,7 +25,7 @@ Now you can manage localizations:
 
 ## Alternative
 
-You can also install certain packages (check the compatibility table):
+You can also install certain packages (check the [compatibility table](compatibility/index.md)):
 
 ```bash:no-line-numbers
 composer require --dev laravel-lang/publisher
