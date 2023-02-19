@@ -28,29 +28,34 @@ We accept contributions via Pull Requests on GitHub:
 * Keep in mind that the `*-inline.json` files does not come with Laravel and the idea of this file is not to put a specific name to each attribute (as in `validation.php`)
   but a generic name for the validation attributes. Therefore in the translations of this file the placeholder `:attribute` **should not** appear.
 * Add a pull request with the name of the language. For example:
-  > [fr]: Added new localization
+  ::: tip
+  [fr]: Added new localization
+  :::
 
 ## How can I fix the file?
 
 * Fork the desired repository ([Lang](https://github.com/Laravel-Lang/lang), [Attributes](https://github.com/Laravel-Lang/attributes)
   or [HTTP Statuses](https://github.com/Laravel-Lang/http-statuses));
 * Update the files;
-  > Note that in inline files (`json-inline.json` and `php-inline.json`), keys are the "non-inline" option.
-  >
-  > For example:
-  > ```json
-  > {
-  >   "The :attribute must be at least :length characters.": "This field must be at least :length characters."
-  > }
-  > ```
+  ::: tip
+  Note that in inline files (`json-inline.json` and `php-inline.json`), keys are the "non-inline" option.
+  
+  For example:
+  ```json:no-line-numbers
+  {
+    "The :attribute must be at least :length characters.": "This field must be at least :length characters."
+  }
+  ```
+  :::
 * Add a pull request with the name of the language
-  > ex: [fr]: Updated translations
+  ::: tip
+  ex: [fr]: Updated translations
+  :::
 
 ## What is the difference between "inline" files and "non-inline" files?
 
 * **php.json** - contains translations of values for PHP localization files.
 * **php-inline.json** - contains inline translations of values for PHP localization files.
-
 * **json.json** - contains translations of values for JSON localization files.
 * **json-inline.json** - contains inline translations of values for JSON localization files.
 
@@ -78,20 +83,22 @@ We can avoid this situation in the following way:
 * Fork this repository if you haven't already;
 * Create a `_excludes.json` file in the localization folder if it doesn't already exist;
 * This file contains an array of values for each exception.
-  > For example, we need to exclude Micronesia from the status check for Italian:
-  >
-  > _locales/it/json.json_:
-  > ```json
-  > {
-  >     "Micronesia, Federated States Of": "Micronesia"
-  > }
-  > ```
-  >
-  > _locales/it/\_excludes.json_:
-  > ```json
-  > [
-  >     "Micronesia"
-  > ]
-  > ```
+  ::: tip
+  For example, we need to exclude Micronesia from the status check for Italian:
+  
+  _locales/it/json.json_:
+  ```json
+  {
+      "Micronesia, Federated States Of": "Micronesia"
+  }
+  ```
+  
+  _locales/it/\_excludes.json_:
+  ```json
+  [
+      "Micronesia"
+  ]
+  ```
+  :::
 
 * Add these changes to the pull request you will send.

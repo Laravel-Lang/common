@@ -5,9 +5,8 @@ Unfortunately, [var_export](https://www.php.net/manual/en/function.var-export.ph
 
 Your file example:
 
-// auth.php
-
 ```php
+// auth.php
 <?php
 
 return [
@@ -41,9 +40,8 @@ return [
 
 and example of `validation.php` file:
 
-// your file:
-
 ```php
+// your file:
 <?php
 
 return [

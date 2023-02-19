@@ -18,13 +18,9 @@ To get the latest version of `Laravel Lang: Common`, simply require the project 
 composer require --dev laravel-lang/common
 ```
 
-> Note
-> 
-> If you are using the list of localizations from the `Laravel Lang: Publisher` package in production, then use this command instead:
-> 
-> ```bash:no-line-numbers
-> composer require laravel-lang/common
-> ```
+::: tip
+If you are using the list of localizations from the `Laravel Lang: Publisher` package in production, then use this command instead: `composer require laravel-lang/common`.
+:::
 
 Now you can manage localizations:
 

@@ -1,6 +1,8 @@
 # Install Plugins
 
-> [See list](local.md) of official packages working with the translation manager.
+::: tip
+[See list](local.md) of official packages working with the translation manager.
+:::
 
 For a manager to work, you need to do two things:
 
@@ -12,6 +14,8 @@ Now, when the `php artisan lang:update` command is executed, the manager will ch
 If files with the same names exist in different packages, for example, `custom.php`, then during their processing all keys from all files will be combined.
 
 
-> For ease of development, use a ready-made [Translations Template](https://github.com/Laravel-Lang/translations-template).
+::: tip
+For ease of development, use a ready-made [Translations Template](https://github.com/Laravel-Lang/translations-template).
+:::
 
 It's all. Enjoy! 😊

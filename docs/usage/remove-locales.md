@@ -1,8 +1,8 @@
 # Remove locales
 
-> **ATTENTION**
->
-> When this command is executed, the entire locale folder with all files is deleted except default and fallback locales.
+::: warning ATTENTION
+When this command is executed, the entire locale folder with all files is deleted except default and fallback locales.
+:::
 
 To delete localizations, you must use `lang:rm` command, passing the letter abbreviations into it:
 

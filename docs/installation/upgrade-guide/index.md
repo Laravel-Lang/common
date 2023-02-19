@@ -2,7 +2,9 @@
 
 ## From several projects to `laravel-lang/common`
 
-> Check the version of the framework and PHP against the [compatibility](../compatibility/common.md) table.
+::: tip
+Check the version of the framework and PHP against the [compatibility](../compatibility/common.md) table.
+:::
 
 First remove the old dependencies:
 

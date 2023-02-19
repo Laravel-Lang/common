@@ -2,8 +2,6 @@
 
 Perhaps the facades will be useful to you:
 
-## Locales
-
 ```php
 use LaravelLang\Publisher\Facades\Helpers\Locales;
 
