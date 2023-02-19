@@ -24,7 +24,7 @@ This package is licensed under the [MIT License](LICENSE).
 
 [badge_build]:          https://img.shields.io/github/actions/workflow/status/laravel-lang/common/phpunit.yml?style=flat-square
 
-[badge_downloads]:      https://img.shields.io/packagist/dt/laravel-lang/lang.svg?style=flat-square
+[badge_downloads]:      https://img.shields.io/packagist/dt/laravel-lang/common.svg?style=flat-square
 
 [badge_license]:        https://img.shields.io/packagist/l/laravel-lang/common.svg?style=flat-square
 
