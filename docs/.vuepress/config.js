@@ -65,8 +65,8 @@ module.exports = {
                 collapsible: true,
                 children: [
                     {
-                        text: 'Introduction',
-                        link: '/'
+                        text: 'Installation',
+                        link: '/installation/'
                     },
                     {
                         text: 'Compatibility',
@@ -81,8 +81,8 @@ module.exports = {
                         ]
                     },
                     {
-                        text: 'Installation',
-                        link: '/installation/'
+                        text: 'JSON Fallback Hotfix',
+                        link: '/installation/json-fallback-hotfix.md'
                     }
                 ]
             },
