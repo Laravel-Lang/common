@@ -1,5 +1,3 @@
-import fs from 'fs'
-import path from 'path'
 import dotenv from 'dotenv'
 
 import { defaultTheme, viteBundler } from 'vuepress'
@@ -37,13 +35,30 @@ module.exports = {
         editLink: true,
 
         navbar: [
-            { text: 'Translations Status', link: '/status.md' },
-            { text: '12.x', link: '/changelog/12.x.md' }
+            { text: 'Quick Start', link: '/installation/index.md' },
+
+            {
+                text: 'Plugins',
+                children: [
+                    '/plugins/installation.md',
+                    '/plugins/local.md',
+                    '/plugins/community.md'
+                ]
+            },
+
+            { text: 'Completion Status', link: '/statuses/index.md' }
         ],
 
         sidebarDepth: 1,
 
         sidebar: [
+            {
+                text: 'Prologue',
+                collapsible: true,
+                children: [
+                    { text: 'Upgrade', link: '/installation/upgrade-guide/index.md' }
+                ]
+            },
             {
                 text: 'Getting Started',
                 collapsible: true,
@@ -52,35 +67,60 @@ module.exports = {
                         text: 'Introduction',
                         link: '/'
                     },
-
                     {
-                        text: 'Installation',
-                        link: '/installation/',
+                        text: 'Compatibility',
                         collapsible: true,
+                        link: '/installation/compatibility/index.md',
                         children: [
-                            '/installation/compatibility.md',
-                            '/installation/managers.md',
-                            '/installation/github.md'
+                            { text: 'Common', link: '/installation/compatibility/common.md' },
+                            { text: 'Publisher', link: '/installation/compatibility/publisher.md' },
+                            { text: 'Lang', link: '/installation/compatibility/lang.md' },
+                            { text: 'Attributes', link: '/installation/compatibility/attributes.md' },
+                            { text: 'HTTP Statuses', link: '/installation/compatibility/http-statuses.md' }
                         ]
                     },
-
-                    { text: 'Basic Usage', link: '/usage.md' },
-
                     {
-                        text: 'Translations Status',
-                        link: '/status.md',
-                        collapsible: true,
-                        children: getChildren('statuses')
-                    },
-
-                    {
-                        text: 'Changelog',
-                        link: '/changelog/index.md',
-                        collapsible: true,
-                        children: getChildren('changelog', 'desc')
+                        text: 'Installation',
+                        link: '/installation/'
                     }
                 ]
-            }, {
+            },
+            {
+                text: 'Usage',
+                collapsible: true,
+                children: [
+                    {
+                        text: 'Basic Usage',
+                        collapsible: true,
+                        children: [
+                            { text: 'General principles', link: '/usage/index.md' },
+                            { text: 'Add locales', link: '/usage/add-locales.md' },
+                            { text: 'Update locales', link: '/usage/update-locales.md' },
+                            { text: 'Reset locales', link: '/usage/reset-locales.md' },
+                            { text: 'Remove locales', link: '/usage/remove-locales.md' },
+                            { text: 'Aliases', link: '/usage/aliases.md' }
+                        ]
+                    },
+                    {
+                        text: 'Features',
+                        collapsible: true,
+                        children: [
+                            { text: 'Alignment', link: '/usage/features/alignment.md' },
+                            { text: 'Facades', link: '/usage/features/facades.md' },
+                            { text: 'Smart punctuation', link: '/usage/features/smart-punctuation.md' }
+                        ]
+                    }
+                ]
+            },
+            {
+                text: 'Plugins',
+                children: [
+                    '/plugins/installation.md',
+                    '/plugins/local.md',
+                    '/plugins/community.md'
+                ]
+            },
+            {
                 text: 'References',
                 collapsible: true,
                 children: [
@@ -88,6 +128,10 @@ module.exports = {
                     { text: 'Code of Conduct', link: '/code-of-conduct.md' },
                     { text: 'Contributing', link: '/contributing.md' }
                 ]
+            },
+            {
+                text: 'License',
+                link: '/license.md'
             }
         ]
     }),
@@ -99,36 +143,4 @@ module.exports = {
             indexName: process.env.VITE_APP_ALGOLIA_INDEX_NAME
         })
     ]
-}
-
-function getChildren(folder, sort = 'asc') {
-    const extension = ['.md']
-    const names = ['index.md', 'readme.md']
-
-    const dir = `${ __dirname }/../${ folder }`
-
-    return fs
-        .readdirSync(path.join(dir))
-        .filter(item =>
-            fs.statSync(path.join(dir, item)).isFile() &&
-            ! names.includes(item.toLowerCase()) &&
-            extension.includes(path.extname(item))
-        )
-        .sort((a, b) => {
-            a = resolveNumeric(a)
-            b = resolveNumeric(b)
-
-            if (a < b) return sort === 'asc' ? -1 : 1
-            if (a > b) return sort === 'asc' ? 1 : -1
-
-            return 0
-        }).map(item => `/${ folder }/${ item }`)
-}
-
-function resolveNumeric(value) {
-    const sub = value.substring(0, value.indexOf('.'))
-
-    const num = Number(sub)
-
-    return isNaN(num) ? value : num
 }
