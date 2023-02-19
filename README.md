@@ -9,31 +9,13 @@
 [![License][badge_license]][link_license]
 
 
-## Installation
+## Documentation, Installation, and Usage Instructions
 
-To get the latest version of `Laravel Lang Common`, simply require the project using [Composer](https://getcomposer.org):
+See the [documentation][link_website] for detailed installation and usage instructions.
 
-```bash
-composer require laravel-lang/common
-```
+## Contributing
 
-Or manually update `require` block of `composer.json` and run the `composer update` console command:
-
-```json
-{
-    "require": {
-        "laravel-lang/common": "^3.0"
-    }
-}
-```
-
-## Compatibility
-
-| Laravel, Lumen | PHP                | Package Version | What packages will be installed                              |
-|----------------|--------------------|-----------------|--------------------------------------------------------------|
-| 8.x, 9.x, 10.x | 8.1, 8.2           | `^3.0`          | Publisher 14.x, Lang 12.x, Attributes 2.x, HTTP Statuses 3.x |
-| 7.x, 8.x, 9.x  | 8.0, 8.1           | `^2.0`          | Publisher 13.x, Lang 10.x, Attributes 1.x, HTTP Statuses 2.x |
-| 7.x, 8.x, 9.x  | 7.3, 7.4, 8.0, 8.1 | `^1.0`          | Publisher 12.x, Lang 10.x, Attributes 1.x, HTTP Statuses 2.x |
+Please see [CONTRIBUTING][link_contributing] for details.
 
 ## License
 
@@ -55,3 +37,7 @@ This package is licensed under the [MIT License](LICENSE).
 [link_license]:         LICENSE
 
 [link_packagist]:       https://packagist.org/packages/laravel-lang/common
+
+[link_website]:         https://laravel-lang.com
+
+[link_contributing]:    https://laravel-lang.com/contributing.html

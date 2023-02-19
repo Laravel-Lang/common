@@ -1,16 +1,18 @@
 .idea/
+_site/
 build/
 node_modules/
+tmp/
 vendor/
 
+.DS_Store
 .env
-.cache
 .temp
 
 *.bak
 *.cache
 *.clover
 *.orig
-*.lock
 
+composer.lock
 package-lock.json
