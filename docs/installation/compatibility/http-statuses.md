@@ -1,3 +1,7 @@
+---
+title: HTTP Statuses
+---
+
 # Compatibility: HTTP Statuses
 
 | Laravel, Lumen | PHP                | Publisher | Package Version | Status                                |

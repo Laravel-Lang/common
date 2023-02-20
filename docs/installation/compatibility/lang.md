@@ -1,5 +1,8 @@
-# Compatibility: Lang
+---
+title: Lang
+---
 
+# Compatibility: Lang
 
 ## Support Policy
 
@@ -21,7 +24,7 @@
 | UI `^4.0`               |             `^9.0`             |   `^11.0`, `^12.0`   | August 6th, 2024 |
 | UI `^3.0`               |         `^8.0`, `^9.0`         |   `^11.0`, `^12.0`   | August 8th, 2023 |
 
-## Package
+## Packages
 
 ### 12.0
 
