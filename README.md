@@ -18,7 +18,7 @@ Please see [CONTRIBUTING](https://laravel-lang.com/contributing.html) for detail
 
 ## License
 
-This package is licensed under the [MIT License](LICENSE).
+This package is licensed under the [MIT License][link_license].
 
 
 [badge_build]:          https://img.shields.io/github/actions/workflow/status/laravel-lang/common/phpunit.yml?style=flat-square
