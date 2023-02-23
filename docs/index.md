@@ -21,7 +21,7 @@
 * [Laravel UI](https://github.com/laravel/ui)
 * and other
 
-## Documentation, Installation, and Usage Instructions
+## Documentation
 
 See the documentation for detailed [installation](installation/index.md) and [usage](usage/general-principles.md) instructions.
 
