@@ -1,3 +1,7 @@
+---
+title: Publisher
+---
+
 # Compatibility: Publisher
 
 | Laravel, Lumen               | PHP                     | Package Version | Comment                               |

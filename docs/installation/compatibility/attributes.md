@@ -1,3 +1,7 @@
+---
+title: Attributes
+---
+
 # Compatibility: Attributes
 
 | Laravel, Lumen | PHP                | Publisher   | Package Version | Status                                |

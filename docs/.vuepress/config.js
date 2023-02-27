@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import { defaultTheme, viteBundler } from 'vuepress'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { containerPlugin } from '@vuepress/plugin-container'
+import { githubLinkifyPlugin } from 'vuepress-plugin-github-linkify'
 
 dotenv.config()
 
@@ -36,7 +37,7 @@ module.exports = {
         editLink: true,
 
         navbar: [
-            { text: 'Quick Start', link: '/installation/index.md' },
+            '/installation/index.md',
 
             {
                 text: 'Plugins',
@@ -47,7 +48,7 @@ module.exports = {
                 ]
             },
 
-            { text: 'Completion Status', link: '/statuses/index.md' }
+            '/statuses/index.md'
         ],
 
         sidebarDepth: 1,
@@ -57,58 +58,48 @@ module.exports = {
                 text: 'Prologue',
                 collapsible: true,
                 children: [
-                    { text: 'Upgrade', link: '/installation/upgrade-guide/index.md' }
+                    '/installation/upgrade-guide/index.md'
                 ]
             },
             {
                 text: 'Getting Started',
-                collapsible: true,
                 children: [
-                    {
-                        text: 'Installation',
-                        link: '/installation/'
-                    },
+                    '/installation/index.md',
+
                     {
                         text: 'Compatibility',
-                        collapsible: true,
-                        link: '/installation/compatibility/index.md',
                         children: [
-                            { text: 'Common', link: '/installation/compatibility/common.md' },
-                            { text: 'Publisher', link: '/installation/compatibility/publisher.md' },
-                            { text: 'Lang', link: '/installation/compatibility/lang.md' },
-                            { text: 'Attributes', link: '/installation/compatibility/attributes.md' },
-                            { text: 'HTTP Statuses', link: '/installation/compatibility/http-statuses.md' }
+                            '/installation/compatibility/common.md',
+                            '/installation/compatibility/publisher.md',
+                            '/installation/compatibility/lang.md',
+                            '/installation/compatibility/attributes.md',
+                            '/installation/compatibility/http-statuses.md'
                         ]
                     },
-                    {
-                        text: 'JSON Fallback Hotfix',
-                        link: '/installation/json-fallback-hotfix.md'
-                    }
+
+                    '/installation/json-fallback-hotfix.md'
                 ]
             },
             {
                 text: 'Usage',
-                collapsible: true,
                 children: [
                     {
-                        text: 'Basic Usage',
-                        collapsible: true,
+                        text: 'Locales Management',
                         children: [
-                            { text: 'General principles', link: '/usage/index.md' },
-                            { text: 'Add locales', link: '/usage/add-locales.md' },
-                            { text: 'Update locales', link: '/usage/update-locales.md' },
-                            { text: 'Reset locales', link: '/usage/reset-locales.md' },
-                            { text: 'Remove locales', link: '/usage/remove-locales.md' },
-                            { text: 'Aliases', link: '/usage/aliases.md' }
+                            '/usage/general-principles.md',
+                            '/usage/add-locales.md',
+                            '/usage/update-locales.md',
+                            '/usage/reset-locales.md',
+                            '/usage/remove-locales.md',
+                            '/usage/aliases.md'
                         ]
                     },
                     {
                         text: 'Features',
-                        collapsible: true,
                         children: [
-                            { text: 'Alignment', link: '/usage/features/alignment.md' },
-                            { text: 'Facades', link: '/usage/features/facades.md' },
-                            { text: 'Smart punctuation', link: '/usage/features/smart-punctuation.md' }
+                            '/usage/features/alignment.md',
+                            '/usage/features/facades.md',
+                            '/usage/features/smart-punctuation.md'
                         ]
                     }
                 ]
@@ -125,9 +116,9 @@ module.exports = {
                 text: 'References',
                 collapsible: true,
                 children: [
-                    { text: 'Referents', link: '/referents.md' },
-                    { text: 'Code of Conduct', link: '/code-of-conduct.md' },
-                    { text: 'Contributing', link: '/contributing.md' }
+                    '/referents.md',
+                    '/code-of-conduct.md',
+                    '/contributing.md'
                 ]
             },
             {
@@ -146,6 +137,10 @@ module.exports = {
 
         containerPlugin({
             type: 'tip'
+        }),
+
+        githubLinkifyPlugin({
+            repo: 'Laravel-Lang/common'
         })
     ]
 }

@@ -1,9 +1,13 @@
 @charset "UTF-8";
 
-@import 'fonts';
+@import "fonts";
 
 :root {
-    --content-width: 800px;
+    --content-width: 75%;
+
+    @media only screen and (min-width: 1921px) {
+        --content-width: 1600px;
+    }
 }
 
 .code-group {

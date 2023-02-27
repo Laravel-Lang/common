@@ -1,6 +1,4 @@
-# Usage
-
-## General principles
+# General principles
 
 ::: tip
 Json fallbacks [doesn't work](https://github.com/laravel/framework/issues/41565#issuecomment-1073572954) in the Laravel Framework.
