@@ -20,10 +20,10 @@ Locales::notInstalled(): array
 // Retrieving a list of protected locales.
 Locales::protects(): array
 
-// Checks if a language pack is installed.
+// Check if language packs are available in requested locale.
 Locales::isAvailable(LocaleCode|string|null $locale): bool
 
-// Checks whether it is possible to install the language pack.
+// Check if a language pack is installed.
 Locales::isInstalled(LocaleCode|string|null $locale): bool
 
 // The checked locale protecting.
