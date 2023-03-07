@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4af9b221","path":"/usage/features/alignment.html","title":"Alignment","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1676829631000},"filePathRelative":"usage/features/alignment.md"}');export{e as data};

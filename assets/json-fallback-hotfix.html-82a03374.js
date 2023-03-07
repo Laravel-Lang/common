@@ -1,0 +1,1 @@
+const t=JSON.parse(`{"key":"v-063fc1a2","path":"/installation/json-fallback-hotfix.html","title":"JSON Fallback Hotfix","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"What's fixed","slug":"what-s-fixed","link":"#what-s-fixed","children":[]}],"git":{"updatedTime":1676830420000},"filePathRelative":"installation/json-fallback-hotfix.md"}`);export{t as data};

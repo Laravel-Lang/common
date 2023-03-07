@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-567ddbb8","path":"/installation/compatibility/publisher.html","title":"Publisher","lang":"en-US","frontmatter":{"title":"Publisher"},"headers":[],"git":{"updatedTime":1676886163000},"filePathRelative":"installation/compatibility/publisher.md"}');export{t as data};

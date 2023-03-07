@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-3b888a9b","path":"/installation/compatibility/","title":"Compatibility","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1676824272000},"filePathRelative":"installation/compatibility/index.md"}');export{t as data};

@@ -1,0 +1,2 @@
+import{_ as s,p as t,q as a,R as e,t as l}from"./framework-e03faf0e.js";const o={},c=e("h1",{id:"reset-locales",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#reset-locales","aria-hidden":"true"},"#"),l(" Reset locales")],-1),n=e("p",null,"You can reset the localization files to the default state.",-1),r=e("div",{class:"language-bash","data-ext":"sh"},[e("pre",{class:"language-bash"},[e("code",null,`php artisan lang:reset
+`)])],-1),_=[c,n,r];function d(h,i){return t(),a("div",null,_)}const f=s(o,[["render",d],["__file","reset-locales.html.vue"]]);export{f as default};
