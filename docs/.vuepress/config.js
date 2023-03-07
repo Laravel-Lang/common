@@ -43,7 +43,7 @@ module.exports = {
                 text: 'Plugins',
                 children: [
                     '/plugins/installation.md',
-                    '/plugins/local.md',
+                    '/plugins/official.md',
                     '/plugins/community.md'
                 ]
             },
@@ -108,7 +108,7 @@ module.exports = {
                 text: 'Plugins',
                 children: [
                     '/plugins/installation.md',
-                    '/plugins/local.md',
+                    '/plugins/official.md',
                     '/plugins/community.md'
                 ]
             },
