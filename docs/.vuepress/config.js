@@ -58,7 +58,8 @@ module.exports = {
                 text: 'Prologue',
                 collapsible: true,
                 children: [
-                    '/installation/upgrade-guide/index.md'
+                    '/installation/upgrade-guide/index.md',
+                    '/installation/compatibility/support-policy.md'
                 ]
             },
             {
