@@ -1,6 +1,6 @@
 # Laravel Lang Common
 
-![laravel lang common](https://preview.dragon-code.pro/laravel-lang/common.svg?brand=laravel)
+![laravel lang common](https://preview.dragon-code.pro/laravel-lang/common.svg?brand=laravel&mode=dark)
 
 [![Stable Version][badge_stable]][link_packagist]
 [![Unstable Version][badge_unstable]][link_packagist]
