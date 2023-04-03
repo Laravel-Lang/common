@@ -2,4 +2,4 @@
 
 | Package        | Comment                   |
 |:---------------|:--------------------------|
-| `package/link` | Your package may be here. |
+| [forxer/generic-term-translations-for-laravel](https://github.com/forxer/generic-term-translations-for-laravel) | A set of generic term translations. |
