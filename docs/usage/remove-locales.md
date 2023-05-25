@@ -7,7 +7,7 @@ When this command is executed, the entire locale folder with all files is delete
 To delete localizations, you must use `lang:rm` command, passing the letter abbreviations into it:
 
 ```bash:no-line-numbers
-php artisan lang:rm de ro zh-CN
+php artisan lang:rm de ro zh_CN
 ```
 
 If you do not specify arguments when passing parameters, then an interactive question will be displayed in the console with a choice of localizations from among the available ones.
