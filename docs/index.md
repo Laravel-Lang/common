@@ -1,6 +1,6 @@
 # Getting Started
 
-![laravel lang app localization](https://preview.dragon-code.pro/laravel-lang/app-localization.svg?brand=laravel)
+![laravel-lang localize-your-app](https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&preposition=with&mode=dark)
 
 [![Stable Version][badge_stable]][link_packagist]
 [![Unstable Version][badge_unstable]][link_packagist]
