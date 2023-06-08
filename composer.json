@@ -19,7 +19,15 @@
         "http-status-code",
         "http-status",
         "attribute",
-        "attributes"
+        "attributes",
+        "framework",
+        "jetstream",
+        "fortify",
+        "cashier",
+        "breeze",
+        "nova",
+        "spark",
+        "ui"
     ],
     "authors": [
         {
