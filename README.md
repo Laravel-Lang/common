@@ -1,4 +1,4 @@
-# Laravel Lang Common
+# Laravel Lang
 
 ![laravel-lang localize-your-app](https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&preposition=with&mode=dark)
 
