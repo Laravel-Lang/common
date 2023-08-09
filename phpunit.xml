@@ -2,27 +2,21 @@
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
          cacheResult="false"
-         backupGlobals="false"
-         backupStaticAttributes="false"
          bootstrap="vendor/autoload.php"
          colors="true"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnError="false"
          stopOnFailure="false"
-         verbose="true"
 >
-    <coverage processUncoveredFiles="true">
+    <coverage>
         <report>
-            <clover outputFile="build/logs/clover.xml" />
-            <html outputDirectory="build/logs/coverage" />
-            <text outputFile="build/logs/coverage.txt" />
+            <clover outputFile="build/logs/clover.xml"/>
+            <html outputDirectory="build/logs/coverage"/>
+            <text outputFile="build/logs/coverage.txt"/>
         </report>
     </coverage>
     <php>
-        <env name="APP_KEY" value="AckfSECXIvnK5r28GVIWUAxmbBSjTsmF" />
+        <env name="APP_KEY" value="AckfSECXIvnK5r28GVIWUAxmbBSjTsmF"/>
     </php>
     <testsuites>
         <testsuite name="Test Suite">
