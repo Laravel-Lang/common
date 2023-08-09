@@ -20,10 +20,10 @@
         "docs"
     ],
     "devDependencies": {
-        "@vuepress/plugin-container": "2.0.0-beta.62",
-        "@vuepress/plugin-docsearch": "2.0.0-beta.62",
-        "dotenv": "^15.0.0",
-        "vuepress": "2.0.0-beta.62",
+        "@vuepress/plugin-container": "2.0.0-beta.66",
+        "@vuepress/plugin-docsearch": "2.0.0-beta.66",
+        "dotenv": "^16.3.1",
+        "vuepress": "2.0.0-beta.66",
         "vuepress-plugin-github-linkify": "^1.2.3"
     },
     "engines": {
