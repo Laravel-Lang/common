@@ -12,7 +12,7 @@ title: Lang
 | Breeze                | 1       |
 | Cashier Stripe        | 13, 14  |
 | Fortify               | 1       |
-| Jetstream             | 2, 3    |
+| Jetstream             | 2, 3, 4 |
 | Nova                  | 4       |
 | Spark Aurelius        | 11, 12  |
 | Spark Aurelius Mollie | 2       |
