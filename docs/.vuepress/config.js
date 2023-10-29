@@ -59,7 +59,8 @@ module.exports = {
                 collapsible: true,
                 children: [
                     '/installation/upgrade-guide/index.md',
-                    '/installation/compatibility/support-policy.md'
+                    '/installation/compatibility/support-policy.md',
+                    '/installation/about.md'
                 ]
             },
             {
