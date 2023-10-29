@@ -39,4 +39,6 @@ composer require --dev laravel-lang/publisher
 composer require --dev laravel-lang/lang
 composer require --dev laravel-lang/attributes
 composer require --dev laravel-lang/http-statuses
+
+composer require laravel-lang/locales
 ```

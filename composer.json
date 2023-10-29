@@ -46,15 +46,16 @@
     },
     "require": {
         "php": "^8.1",
-        "laravel-lang/attributes": "^2.3.3",
-        "laravel-lang/http-statuses": "^3.3.1",
-        "laravel-lang/lang": "^13.0",
-        "laravel-lang/publisher": "^14.6.4"
+        "laravel-lang/attributes": "^2.4.1",
+        "laravel-lang/http-statuses": "^3.4.5",
+        "laravel-lang/lang": "^13.2.8",
+        "laravel-lang/locales": "^1.0",
+        "laravel-lang/publisher": "^14.7.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^8.5 || ^9.0",
-        "phpunit/phpunit": "^10.0",
-        "symfony/var-dumper": "^6.3"
+        "orchestra/testbench": "^8.14",
+        "phpunit/phpunit": "^10.4.2",
+        "symfony/var-dumper": "^6.3.6"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
@@ -66,8 +67,8 @@
     "config": {
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
-            "ergebnis/composer-normalize": true,
             "dragon-code/codestyler": true,
+            "ergebnis/composer-normalize": true,
             "friendsofphp/php-cs-fixer": true,
             "symfony/thanks": true
         },
