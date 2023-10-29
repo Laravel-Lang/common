@@ -10,6 +10,8 @@
         "laravel",
         "language",
         "languages",
+        "localization",
+        "localizations",
         "locales",
         "locale",
         "i18n",
