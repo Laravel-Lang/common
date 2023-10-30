@@ -51,8 +51,8 @@
         "laravel-lang/attributes": "^2.4.1",
         "laravel-lang/http-statuses": "^3.4.5",
         "laravel-lang/lang": "^13.2.8",
-        "laravel-lang/locales": "^1.2",
-        "laravel-lang/publisher": "^14.7.0"
+        "laravel-lang/locales": "^1.4",
+        "laravel-lang/publisher": "^14.7.1"
     },
     "require-dev": {
         "orchestra/testbench": "^8.14",
