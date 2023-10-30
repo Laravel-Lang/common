@@ -11,7 +11,7 @@ use LaravelLang\Locales\Facades\Locales;
 Locales::available(): array // array<LocaleData>
 
 // List of installed localizations.
-Locales::installed(): array // array<LocaleData>
+Locales::installed(bool $withProtects = true): array // array<LocaleData>
 
 // List of uninstalled localizations.
 Locales::notInstalled(): array // array<LocaleData>
@@ -69,7 +69,7 @@ use LaravelLang\Locales\Facades\Locales;
 Locales::raw()->available(): array // array<string>
 
 // List of installed localizations.
-Locales::raw()->installed(): array // array<string>
+Locales::raw()->installed(bool $withProtects = true): array // array<string>
 
 // List of uninstalled localizations.
 Locales::raw()->notInstalled(): array // array<string>
