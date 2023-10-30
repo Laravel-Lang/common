@@ -41,7 +41,7 @@ For example:
 return Locales::getDefault();
 
 // Non aliased
-LaravelLang\Locales\Data\Locale {
+LaravelLang\Locales\Data\LocaleData {
   +code: "de"
   +type: "Latn"
   +name: "German"
@@ -50,7 +50,7 @@ LaravelLang\Locales\Data\Locale {
 }
 
 // Aliased
-LaravelLang\Locales\Data\Locale {
+LaravelLang\Locales\Data\LocaleData {
   +code: "de-DE"
   +type: "Latn"
   +name: "German"
