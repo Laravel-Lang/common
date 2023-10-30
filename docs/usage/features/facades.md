@@ -3,7 +3,7 @@
 ## With DTOs
 
 ```php
-use LaravelLang\Locales\Data\Locale as LocaleData;
+use LaravelLang\Locales\Data\LocaleData;
 use LaravelLang\Locales\Enums\Locale;
 use LaravelLang\Locales\Facades\Locales;
 
