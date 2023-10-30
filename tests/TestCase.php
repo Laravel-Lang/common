@@ -8,7 +8,8 @@ use DragonCode\Support\Facades\Filesystem\Directory;
 use LaravelLang\Attributes\ServiceProvider as AttributesServiceProvider;
 use LaravelLang\HttpStatuses\ServiceProvider as HttpStatusesServiceProvider;
 use LaravelLang\Lang\ServiceProvider as LangServiceProvider;
-use LaravelLang\Publisher\Constants\Locales;
+use LaravelLang\Locales\Enums\Locale;
+use LaravelLang\Locales\ServiceProvider as LocalesServiceProvider;
 use LaravelLang\Publisher\ServiceProvider as PublisherServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
@@ -24,6 +25,7 @@ abstract class TestCase extends BaseTestCase
     protected function getPackageProviders($app): array
     {
         return [
+            LocalesServiceProvider::class,
             LangServiceProvider::class,
             AttributesServiceProvider::class,
             HttpStatusesServiceProvider::class,
@@ -34,10 +36,10 @@ abstract class TestCase extends BaseTestCase
     protected function cleanUp(): void
     {
         Directory::ensureDelete($this->langPath());
-        Directory::ensureDirectory($this->langPath(Locales::ENGLISH));
+        Directory::ensureDirectory($this->langPath(Locale::English));
     }
 
-    protected function langPath(?Locales $locale = null): string
+    protected function langPath(?Locale $locale = null): string
     {
         return lang_path($locale->value ?? '');
     }

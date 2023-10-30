@@ -4,25 +4,25 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use LaravelLang\Publisher\Constants\Locales;
+use LaravelLang\Locales\Enums\Locale;
 
 class CommonTest extends TestCase
 {
     public function testAdd(): void
     {
-        $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
-        $this->assertDirectoryDoesNotExist($this->langPath(Locales::AFRIKAANS));
-        $this->assertDirectoryDoesNotExist($this->langPath(Locales::ALBANIAN));
-        $this->assertDirectoryDoesNotExist($this->langPath(Locales::ARABIC));
+        $this->assertDirectoryExists($this->langPath(Locale::English));
+        $this->assertDirectoryDoesNotExist($this->langPath(Locale::Afrikaans));
+        $this->assertDirectoryDoesNotExist($this->langPath(Locale::Albanian));
+        $this->assertDirectoryDoesNotExist($this->langPath(Locale::Arabic));
 
         $this->artisan('lang:add', [
-            'locales' => [Locales::AFRIKAANS, Locales::ALBANIAN, Locales::ARABIC],
+            'locales' => [Locale::Afrikaans, Locale::Albanian, Locale::Arabic],
         ])->assertExitCode(0);
 
-        $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
-        $this->assertDirectoryExists($this->langPath(Locales::AFRIKAANS));
-        $this->assertDirectoryExists($this->langPath(Locales::ALBANIAN));
-        $this->assertDirectoryExists($this->langPath(Locales::ARABIC));
+        $this->assertDirectoryExists($this->langPath(Locale::English));
+        $this->assertDirectoryExists($this->langPath(Locale::Afrikaans));
+        $this->assertDirectoryExists($this->langPath(Locale::Albanian));
+        $this->assertDirectoryExists($this->langPath(Locale::Arabic));
     }
 
     public function testUpdate(): void
@@ -31,10 +31,10 @@ class CommonTest extends TestCase
 
         $this->artisan('lang:update')->assertExitCode(0);
 
-        $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
-        $this->assertDirectoryExists($this->langPath(Locales::AFRIKAANS));
-        $this->assertDirectoryExists($this->langPath(Locales::ALBANIAN));
-        $this->assertDirectoryExists($this->langPath(Locales::ARABIC));
+        $this->assertDirectoryExists($this->langPath(Locale::English));
+        $this->assertDirectoryExists($this->langPath(Locale::Afrikaans));
+        $this->assertDirectoryExists($this->langPath(Locale::Albanian));
+        $this->assertDirectoryExists($this->langPath(Locale::Arabic));
     }
 
     public function testRemove(): void
@@ -45,21 +45,21 @@ class CommonTest extends TestCase
             ->expectsConfirmation('Do you want to remove all localizations?', 'yes')
             ->assertExitCode(0);
 
-        $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
-        $this->assertDirectoryDoesNotExist($this->langPath(Locales::AFRIKAANS));
-        $this->assertDirectoryDoesNotExist($this->langPath(Locales::ALBANIAN));
-        $this->assertDirectoryDoesNotExist($this->langPath(Locales::ARABIC));
+        $this->assertDirectoryExists($this->langPath(Locale::English));
+        $this->assertDirectoryDoesNotExist($this->langPath(Locale::Afrikaans));
+        $this->assertDirectoryDoesNotExist($this->langPath(Locale::Albanian));
+        $this->assertDirectoryDoesNotExist($this->langPath(Locale::Arabic));
 
         $this->testAdd();
 
         $this->artisan('lang:rm', [
-            'locales' => Locales::ALBANIAN,
+            'locales' => Locale::Albanian,
         ])->assertExitCode(0);
 
-        $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
-        $this->assertDirectoryExists($this->langPath(Locales::AFRIKAANS));
-        $this->assertDirectoryDoesNotExist($this->langPath(Locales::ALBANIAN));
-        $this->assertDirectoryExists($this->langPath(Locales::ARABIC));
+        $this->assertDirectoryExists($this->langPath(Locale::English));
+        $this->assertDirectoryExists($this->langPath(Locale::Afrikaans));
+        $this->assertDirectoryDoesNotExist($this->langPath(Locale::Albanian));
+        $this->assertDirectoryExists($this->langPath(Locale::Arabic));
     }
 
     public function testReset(): void
@@ -70,9 +70,9 @@ class CommonTest extends TestCase
             ->expectsConfirmation('Are you sure you want to reset localization files?', 'yes')
             ->assertExitCode(0);
 
-        $this->assertDirectoryExists($this->langPath(Locales::ENGLISH));
-        $this->assertDirectoryExists($this->langPath(Locales::AFRIKAANS));
-        $this->assertDirectoryExists($this->langPath(Locales::ALBANIAN));
-        $this->assertDirectoryExists($this->langPath(Locales::ARABIC));
+        $this->assertDirectoryExists($this->langPath(Locale::English));
+        $this->assertDirectoryExists($this->langPath(Locale::Afrikaans));
+        $this->assertDirectoryExists($this->langPath(Locale::Albanian));
+        $this->assertDirectoryExists($this->langPath(Locale::Arabic));
     }
 }

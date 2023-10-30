@@ -1,9 +1,9 @@
 import dotenv from 'dotenv'
 
-import { defaultTheme, viteBundler } from 'vuepress'
-import { docsearchPlugin } from '@vuepress/plugin-docsearch'
-import { containerPlugin } from '@vuepress/plugin-container'
-import { githubLinkifyPlugin } from 'vuepress-plugin-github-linkify'
+import {defaultTheme, viteBundler} from 'vuepress'
+import {docsearchPlugin} from '@vuepress/plugin-docsearch'
+import {containerPlugin} from '@vuepress/plugin-container'
+import {githubLinkifyPlugin} from 'vuepress-plugin-github-linkify'
 
 dotenv.config()
 
@@ -15,8 +15,8 @@ module.exports = {
     description: 'Easily connect the necessary language packs to the application',
 
     head: [
-        ['link', { rel: 'icon', href: `https://${ hostname }/images/logo.svg` }],
-        ['meta', { name: 'twitter:image', content: `https://${ hostname }/images/social-logo.png` }]
+        ['link', {rel: 'icon', href: `https://${hostname}/images/logo.svg`}],
+        ['meta', {name: 'twitter:image', content: `https://${hostname}/images/social-logo.png`}]
     ],
 
     bundler: viteBundler(),
@@ -25,7 +25,7 @@ module.exports = {
         hostname,
         base: '/',
 
-        logo: `https://${ hostname }/images/logo.svg`,
+        logo: `https://${hostname}/images/logo.svg`,
 
         repo: 'https://github.com/Laravel-Lang/common',
         repoLabel: 'GitHub',
@@ -58,7 +58,26 @@ module.exports = {
                 text: 'Prologue',
                 collapsible: true,
                 children: [
-                    '/installation/upgrade-guide/index.md',
+                    {
+                        text: 'Upgrade Guide',
+                        children: [
+                            {
+                                text: 'Common',
+                                children: [
+                                    '/installation/upgrade-guide/common/5.md',
+                                ]
+                            },
+                            {
+                                text: 'Publisher',
+                                children: [
+                                    '/installation/upgrade-guide/publisher/15.md',
+                                ]
+                            },
+                            '/installation/upgrade-guide/laravel-lang.md',
+                            '/installation/upgrade-guide/caouecs.md',
+                        ]
+                    },
+
                     '/installation/compatibility/support-policy.md',
                     '/installation/about.md'
                 ]
