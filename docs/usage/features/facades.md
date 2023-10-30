@@ -40,9 +40,18 @@ For example:
 ```php
 return Locales::getDefault();
 
+// Non aliased
 LaravelLang\Locales\Data\Locale {
   +code: "de"
-  +codeAlias: "de-DE"
+  +type: "Latn"
+  +name: "German"
+  +native: "Deutsch"
+  +regional: "de_DE"
+}
+
+// Aliased
+LaravelLang\Locales\Data\Locale {
+  +code: "de-DE"
   +type: "Latn"
   +name: "German"
   +native: "Deutsch"
@@ -88,7 +97,10 @@ For example:
 
 ```php
 return Locales::raw()->getDefault();
+// Non aliased
+// de
 
+// Aliased
 // de-DE
 ```
 
