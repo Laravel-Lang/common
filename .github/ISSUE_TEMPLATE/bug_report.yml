@@ -5,6 +5,9 @@ labels:
     - bug
     - common
 
+assignees:
+    - andrey-helldar
+
 body:
     -   type: textarea
         id: environment
