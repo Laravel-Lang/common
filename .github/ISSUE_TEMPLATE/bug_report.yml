@@ -17,6 +17,7 @@ body:
             label: Lang Package Name
             description: The name of the package in which the bug was found.
             placeholder: laravel-lang/common
+            value: laravel-lang/common
         validations:
             required: true
 
