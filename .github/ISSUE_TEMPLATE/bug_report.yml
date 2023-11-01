@@ -23,7 +23,7 @@ body:
                 - laravel-lang/http-statuses
                 - laravel-lang/status-generator
                 - laravel-lang/json-fallback-hotfix 
-            default: laravel-lang/common
+            default: 0
         validations:
             required: true
 
