@@ -1,7 +1,9 @@
 name: Bug
 description: Report a bug or other issue
 
-labels: '👓 needs review'
+labels:
+    - bug
+    - common
 
 body:
     -   type: textarea
