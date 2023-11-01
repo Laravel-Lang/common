@@ -2,13 +2,7 @@
 
 Contributions are **welcome** and will be fully **credited**.
 
-We accept contributions via Pull Requests on GitHub:
-
-* [Laravel Lang: Common](https://github.com/Laravel-Lang/common/pulls)
-* [Laravel Lang: Publisher](https://github.com/Laravel-Lang/publisher/pulls)
-* [Laravel Lang: Lang](https://github.com/Laravel-Lang/lang/pulls)
-* [Laravel Lang: Attributes](https://github.com/Laravel-Lang/attributes/pulls)
-* [Laravel Lang: HTTP Statuses](https://github.com/Laravel-Lang/http-statuses/pulls)
+We accept contributions through Pull Requests on [all projects](https://github.com/orgs/Laravel-Lang/repositories) of our organization.
 
 ## How can I add localization?
 
