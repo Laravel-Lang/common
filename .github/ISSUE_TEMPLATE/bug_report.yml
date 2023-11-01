@@ -14,9 +14,9 @@ body:
                 Tip: Use the `composer info laravel-lang/common` command to get information for Laravel Lang.
                 Tip: Use the `php -v` command to get information for PHP.
             value: |
-                - Laravel-Lang Common Version:
-                - Laravel Version:
-                - PHP Version:
+                - Laravel-Lang Package: 
+                - Laravel Version: 
+                - PHP Version: 
         validations:
             required: true
 
