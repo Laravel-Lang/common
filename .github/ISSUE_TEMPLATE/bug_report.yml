@@ -9,17 +9,47 @@ assignees:
     - andrey-helldar
 
 body:
-    -   type: textarea
-        id: environment
+    -   type: dropdown
+        id: environment-package-name
         attributes:
-            label: Environment
-            description: |
-                Tip: Use the `composer info laravel-lang/common` command to get information for Laravel Lang.
-                Tip: Use the `php -v` command to get information for PHP.
-            value: |
-                - Laravel-Lang Package: 
-                - Laravel Version: 
-                - PHP Version: 
+            label: Lang Package Name
+            description: The name of the package in which the bug was found.
+            options:
+                - laravel-lang/common
+                - laravel-lang/locales
+                - laravel-lang/publisher
+                - laravel-lang/lang
+                - laravel-lang/attributes
+                - laravel-lang/http-statuses
+                - laravel-lang/status-generator
+                - laravel-lang/json-fallback-hotfix 
+            default: laravel-lang/common
+        validations:
+            required: true
+
+    -   type: input
+        id: environment-package-version
+        attributes:
+            label: Lang Package Version
+            description: The version of the package in which the bug was found.
+            placeholder: 13.3.0
+        validations:
+            required: true
+
+    -   type: input
+        id: environment-laravel
+        attributes:
+            label: Laravel Framework Version
+            description: The version of the Laravel framework in which you encountered the problem.
+            placeholder: 10.30.0
+        validations:
+            required: true
+
+    -   type: input
+        id: environment-php
+        attributes:
+            label: PHP Version
+            placeholder: 8.2.12
         validations:
             required: true
 
