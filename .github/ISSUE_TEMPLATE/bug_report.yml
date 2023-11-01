@@ -11,21 +11,12 @@ assignees:
     - andrey-helldar
 
 body:
-    -   type: dropdown
+    -   type: input
         id: environment-package-name
         attributes:
             label: Lang Package Name
             description: The name of the package in which the bug was found.
-            options:
-                - laravel-lang/common
-                - laravel-lang/locales
-                - laravel-lang/publisher
-                - laravel-lang/lang
-                - laravel-lang/attributes
-                - laravel-lang/http-statuses
-                - laravel-lang/status-generator
-                - laravel-lang/json-fallback-hotfix
-            default: 0
+            placeholder: laravel-lang/common
         validations:
             required: true
 
