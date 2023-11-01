@@ -1,6 +1,8 @@
 name: Bug Report
 description: Report a bug or other issue
 
+title: "[Bug]: "
+
 labels:
     - bug
     - common
