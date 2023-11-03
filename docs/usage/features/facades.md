@@ -3,8 +3,6 @@
 ## With DTOs
 
 ```php
-use LaravelLang\Locales\Data\LocaleData;
-use LaravelLang\Locales\Enums\Locale;
 use LaravelLang\Locales\Facades\Locales;
 
 // List of available localizations.
@@ -27,6 +25,9 @@ Locales::isInstalled(Locale|string|null $locale): bool
 
 // The checked locale protecting.
 Locales::isProtected(Locale|string|null $locale): bool
+
+// Validate and returns the correct localization
+Locales::get(mixed $locale): LocaleData
 
 // Getting the default localization name.
 Locales::getDefault(): LocaleData
@@ -52,6 +53,29 @@ LaravelLang\Locales\Data\LocaleData {
 // Aliased
 LaravelLang\Locales\Data\LocaleData {
   +code: "de-DE"
+  +type: "Latn"
+  +name: "German"
+  +native: "Deutsch"
+  +regional: "de_DE"
+}
+```
+```php
+return Locales::get('de');
+
+LaravelLang\Locales\Data\LocaleData {
+  +code: "de"
+  +type: "Latn"
+  +name: "German"
+  +native: "Deutsch"
+  +regional: "de_DE"
+}
+```
+```php
+return Locales::get('foo');
+
+// Will return the default locale
+LaravelLang\Locales\Data\LocaleData {
+  +code: "de"
   +type: "Latn"
   +name: "German"
   +native: "Deutsch"
@@ -86,6 +110,9 @@ Locales::raw()->isInstalled(Locale|string|null $locale): bool
 // The checked locale protecting.
 Locales::raw()->isProtected(Locale|string|null $locale): bool
 
+// Validate and returns the correct localization
+Locales::raw()->get(mixed $locale): string
+
 // Getting the default localization name.
 Locales::raw()->getDefault(): string
 
@@ -102,6 +129,14 @@ return Locales::raw()->getDefault();
 
 // Aliased
 // de-DE
+```
+```php
+return Locales::raw()->get('de');
+// de
+
+return Locales::raw()->get('foo');
+// Will return the default locale
+// de
 ```
 
 To use this functionality, make sure you have
