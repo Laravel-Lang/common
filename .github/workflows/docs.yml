@@ -23,6 +23,13 @@ jobs:
                     fetch-depth: 0
                     token: ${{ secrets.GITHUB_TOKEN }}
 
+            -   name: Setup PHP
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: ${{ matrix.php }}
+                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv
+                    coverage: xdebug
+
             -   name: Setup Node.js
                 uses: actions/setup-node@v4
                 with:
