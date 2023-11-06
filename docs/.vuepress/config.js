@@ -48,7 +48,15 @@ module.exports = {
                 ]
             },
 
-            '/statuses/index.md'
+            {
+                text: 'Completion Status',
+                link: '/statuses/index.md',
+                children: [
+                    {text: 'Lang', link: '/statuses/lang/index.md'},
+                    {text: 'Attributes', link: '/statuses/attributes/index.md'},
+                    {text: 'HTTP Statuses', link: '/statuses/http-statuses/index.md'},
+                ]
+            },
         ],
 
         sidebarDepth: 1,
