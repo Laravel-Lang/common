@@ -10,6 +10,9 @@ on:
         types:
             - completed
     workflow_dispatch:
+    repository_dispatch:
+        types:
+            - docs
 
 permissions: write-all
 
