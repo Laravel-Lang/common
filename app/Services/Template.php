@@ -9,21 +9,22 @@ use DragonCode\Support\Facades\Helpers\Str;
 class Template
 {
     protected static ?string $localeStub = null;
+
     protected static ?string $pageStub = null;
 
     public static function locale(string $code, array $locale): string
     {
         return Str::replaceFormat(static::localeStub(), [
-            'code' => $code,
+            'code'   => $code,
             'locale' => $locale['name'],
-            'native' => Str::title($locale['native'])
+            'native' => Str::title($locale['native']),
         ], '{{%s}}');
     }
 
     public static function page(array $locales): string
     {
         return Str::replaceFormat(static::pageStub(), [
-            'content' => implode(PHP_EOL . PHP_EOL, $locales)
+            'content' => implode(PHP_EOL . PHP_EOL, $locales),
         ], '{{%s}}');
     }
 
