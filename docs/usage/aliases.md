@@ -25,7 +25,7 @@ aliases using a data array.
 
 After this, you can, for example, add new localizations by specifying both the main code and its alias:
 
-```bash
+```bash:no-line-numbers
 php artisan lang:add de de_CH
 ```
 

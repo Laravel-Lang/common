@@ -107,7 +107,14 @@ module.exports = {
                     {
                         text: 'Locales Management',
                         children: [
-                            '/usage/general-principles.md',
+                            {
+                                text: 'General principles',
+                                link: '/usage/general-principles.md',
+                                collapsible: true,
+                                children: [
+                                    '/usage/available-locales.md'
+                                ]
+                            },
                             '/usage/add-locales.md',
                             '/usage/update-locales.md',
                             '/usage/reset-locales.md',

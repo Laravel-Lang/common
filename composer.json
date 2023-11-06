@@ -55,6 +55,7 @@
         "laravel-lang/publisher": "^15.0"
     },
     "require-dev": {
+        "dragon-code/support": "^6.11",
         "orchestra/testbench": "^8.14",
         "phpunit/phpunit": "^10.4.2",
         "symfony/var-dumper": "^6.3.6"
@@ -63,6 +64,7 @@
     "prefer-stable": true,
     "autoload-dev": {
         "psr-4": {
+            "App\\": "app/",
             "Tests\\": "tests/"
         }
     },

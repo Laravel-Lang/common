@@ -29,7 +29,12 @@ jobs:
                     node-version: 20
 
             -   name: Install dependencies
-                run: npm i
+                run: |
+                    npm i
+                    composer install
+
+            -   name: Updating the available localizations page
+                run: php app/bin/available-locales.php
 
             -   name: Build VuePress site
                 run: npm run build
