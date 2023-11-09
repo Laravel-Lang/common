@@ -55,6 +55,7 @@ module.exports = {
                     {text: 'Lang', link: '/statuses/lang/index.md'},
                     {text: 'Attributes', link: '/statuses/attributes/index.md'},
                     {text: 'HTTP Statuses', link: '/statuses/http-statuses/index.md'},
+                    {text: 'Native Locale Names', link: '/statuses/native-locale-names/index.md'},
                 ]
             },
         ],
@@ -133,9 +134,10 @@ module.exports = {
                     {
                         text: 'Features',
                         children: [
-                            '/usage/features/alignment.md',
                             '/usage/features/facades.md',
-                            '/usage/features/smart-punctuation.md'
+                            '/usage/features/native-locale-names.md',
+                            '/usage/features/alignment.md',
+                            '/usage/features/smart-punctuation.md',
                         ]
                     }
                 ]

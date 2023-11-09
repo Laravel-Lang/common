@@ -75,3 +75,9 @@ For example, when you call `__('Remember Me')`, you get `Remember Me` instead of
 fallback language.
 
 This package solves this problem.
+
+## `laravel-lang/native-locale-names`
+
+This package contains a list of localized language names.
+
+I think there is no need to explain why it can be useful 🙂
