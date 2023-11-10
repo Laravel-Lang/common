@@ -34,9 +34,9 @@ The Armenian locale is added using the console command:
 php artisan lang:add hy
 ```
 
-## Azərbaycanca
+## Azərbaycan
 
-The Azerbaijani (Latin) locale is added using the console command:
+The Azerbaijani locale is added using the console command:
 
 ```bash:no-line-numbers
 php artisan lang:add az
@@ -60,7 +60,7 @@ php artisan lang:add be
 
 ## বাংলা
 
-The Bengali locale is added using the console command:
+The Bangla locale is added using the console command:
 
 ```bash:no-line-numbers
 php artisan lang:add bn
@@ -90,7 +90,7 @@ The Catalan locale is added using the console command:
 php artisan lang:add ca
 ```
 
-## ភាសាខ្មែរ
+## ខ្មែរ
 
 The Khmer locale is added using the console command:
 
@@ -98,7 +98,7 @@ The Khmer locale is added using the console command:
 php artisan lang:add km
 ```
 
-## 简体中文
+## 简体中文）
 
 The Chinese (Simplified) locale is added using the console command:
 
@@ -106,7 +106,7 @@ The Chinese (Simplified) locale is added using the console command:
 php artisan lang:add zh_CN
 ```
 
-## 简体中文
+## 中文（香港）
 
 The Chinese (Hong Kong) locale is added using the console command:
 
@@ -114,7 +114,7 @@ The Chinese (Hong Kong) locale is added using the console command:
 php artisan lang:add zh_HK
 ```
 
-## 简体中文
+## 中文（台灣）
 
 The Chinese (Taiwan) locale is added using the console command:
 
@@ -266,7 +266,7 @@ The Icelandic locale is added using the console command:
 php artisan lang:add is
 ```
 
-## Bahasa Indonesia
+## Indonesia
 
 The Indonesian locale is added using the console command:
 
@@ -338,7 +338,7 @@ The Macedonian locale is added using the console command:
 php artisan lang:add mk
 ```
 
-## Bahasa Melayu
+## Melayu
 
 The Malay locale is added using the console command:
 
@@ -354,7 +354,7 @@ The Marathi locale is added using the console command:
 php artisan lang:add mr
 ```
 
-## ᠮᠣᠨᠭᠭᠣᠯ ᠬᠡᠯᠡ
+## Монгол
 
 The Mongolian locale is added using the console command:
 
@@ -370,7 +370,7 @@ The Nepali locale is added using the console command:
 php artisan lang:add ne
 ```
 
-## Bokmål
+## Norsk Bokmål
 
 The Norwegian Bokmål locale is added using the console command:
 
@@ -434,7 +434,7 @@ The Portuguese locale is added using the console command:
 php artisan lang:add pt
 ```
 
-## Português Do Brasil
+## Portugues Do Brasil
 
 The Brazilian Portuguese locale is added using the console command:
 
@@ -458,7 +458,7 @@ The Russian locale is added using the console command:
 php artisan lang:add ru
 ```
 
-## Sardu
+## Sardinian
 
 The Sardinian locale is added using the console command:
 
@@ -466,7 +466,7 @@ The Sardinian locale is added using the console command:
 php artisan lang:add sc
 ```
 
-## Српски
+## Српски (Ћирилица)
 
 The Serbian (Cyrillic) locale is added using the console command:
 
@@ -474,7 +474,7 @@ The Serbian (Cyrillic) locale is added using the console command:
 php artisan lang:add sr_Cyrl
 ```
 
-## Srpski
+## Serbian (Latin)
 
 The Serbian (Latin) locale is added using the console command:
 
@@ -482,7 +482,7 @@ The Serbian (Latin) locale is added using the console command:
 php artisan lang:add sr_Latn
 ```
 
-## Serbian (Latin, Montenegro)
+## Serbian (Montenegro)
 
 The Serbian (Montenegro) locale is added using the console command:
 
@@ -508,7 +508,7 @@ php artisan lang:add sk
 
 ## Slovenščina
 
-The Slovene locale is added using the console command:
+The Slovenian locale is added using the console command:
 
 ```bash:no-line-numbers
 php artisan lang:add sl
@@ -548,7 +548,7 @@ php artisan lang:add tl
 
 ## Тоҷикӣ
 
-The Tajik (Cyrillic) locale is added using the console command:
+The Tajik locale is added using the console command:
 
 ```bash:no-line-numbers
 php artisan lang:add tg
@@ -570,7 +570,7 @@ The Turkish locale is added using the console command:
 php artisan lang:add tr
 ```
 
-## Түркменче
+## Türkmenler
 
 The Turkmen locale is added using the console command:
 
@@ -602,7 +602,7 @@ The Urdu locale is added using the console command:
 php artisan lang:add ur
 ```
 
-## Ўзбек
+## O'zbek (Kirill)
 
 The Uzbek (Cyrillic) locale is added using the console command:
 
@@ -610,7 +610,7 @@ The Uzbek (Cyrillic) locale is added using the console command:
 php artisan lang:add uz_Cyrl
 ```
 
-## Oʼzbekcha
+## Uzbek (Latin)
 
 The Uzbek (Latin) locale is added using the console command:
 
