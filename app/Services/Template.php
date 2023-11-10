@@ -12,12 +12,12 @@ class Template
 
     protected static ?string $pageStub = null;
 
-    public static function locale(string $code, array $locale): string
+    public static function locale(string $code, array $names, array $natives): string
     {
         return Str::replaceFormat(static::localeStub(), [
-            'code'   => $code,
-            'locale' => $locale['name'],
-            'native' => Str::title($locale['native']),
+            'code' => $code,
+            'locale' => Str::title($names[$code]),
+            'native' => Str::title($natives[$code]),
         ], '{{%s}}');
     }
 

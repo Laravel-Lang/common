@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Services;
 
 use DragonCode\Support\Facades\Filesystem\File;
+use LaravelLang\Locales\Enums\Locale;
 
 class Locales
 {
@@ -13,16 +14,26 @@ class Locales
     public static function generate(): void
     {
         static::store(
-            static::compilePage(static::compileLocales())
+            static::compile(
+                static::availableNames(),
+                static::availableNatives()
+            )
         );
     }
 
-    protected static function compileLocales(): array
+    protected static function compile(array $names, array $natives): string
+    {
+        return static::compilePage(
+            static::compileLocales($names, $natives)
+        );
+    }
+
+    protected static function compileLocales(array $names, array $natives): array
     {
         $locales = [];
 
-        foreach (static::available() as $code => $data) {
-            $locales[] = Template::locale($code, $data);
+        foreach (Locale::values() as $code) {
+            $locales[] = Template::locale($code, $names, $natives);
         }
 
         return $locales;
@@ -33,6 +44,16 @@ class Locales
         $locales = require __DIR__ . '/../../vendor/laravel-lang/locales/config/private.php';
 
         return $locales['map'] ?? [];
+    }
+
+    protected static function availableNames(): array
+    {
+        return File::load(__DIR__ . '/../../vendor/laravel-lang/native-locale-names/source/locales.json');
+    }
+
+    protected static function availableNatives(): array
+    {
+        return File::load(__DIR__ . '/../../vendor/laravel-lang/native-locale-names/locales/_native/json.json');
     }
 
     protected static function compilePage(array $locales): string
