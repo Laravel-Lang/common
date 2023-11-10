@@ -15,7 +15,7 @@ class Template
     public static function locale(string $code, array $names, array $natives): string
     {
         return Str::replaceFormat(static::localeStub(), [
-            'code' => $code,
+            'code'   => $code,
             'locale' => Str::title($names[$code]),
             'native' => Str::title($natives[$code]),
         ], '{{%s}}');
