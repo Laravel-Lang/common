@@ -39,46 +39,65 @@ Locales::getFallback(): LocaleData
 For example:
 
 ```php
+use LaravelLang\Locales\Data\LocaleData;
+use LaravelLang\Locales\Facades\Locales;
+
+// config('app.locale') // de
+
 return Locales::getDefault();
 
 // Non aliased
-LaravelLang\Locales\Data\LocaleData {
+LocaleData {
   +code: "de"
   +type: "Latn"
   +name: "German"
   +native: "Deutsch"
+  +localized: "Deutsch"
   +regional: "de_DE"
 }
 
 // Aliased
-LaravelLang\Locales\Data\LocaleData {
+LocaleData {
   +code: "de-DE"
   +type: "Latn"
   +name: "German"
   +native: "Deutsch"
+  +localized: "Deutsch"
   +regional: "de_DE"
 }
 ```
 ```php
+use LaravelLang\Locales\Data\LocaleData;
+use LaravelLang\Locales\Facades\Locales;
+
+// config('app.locale') // vi
+
 return Locales::get('de');
 
-LaravelLang\Locales\Data\LocaleData {
+LocaleData {
   +code: "de"
   +type: "Latn"
   +name: "German"
   +native: "Deutsch"
+  +localized: "Tiếng Đức"
   +regional: "de_DE"
 }
 ```
 ```php
+use LaravelLang\Locales\Data\LocaleData;
+use LaravelLang\Locales\Facades\Locales;
+
+// config('app.locale') // de
+
 return Locales::get('foo');
 
 // Will return the default locale
-LaravelLang\Locales\Data\LocaleData {
+LocaleData {
   +code: "de"
   +type: "Latn"
   +name: "German"
   +native: "Deutsch"
+  +localized: "Deutsch"
   +regional: "de_DE"
 }
 ```
