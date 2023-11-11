@@ -52,7 +52,6 @@
         "laravel-lang/http-statuses": "^3.5.0",
         "laravel-lang/lang": "^13.3.0",
         "laravel-lang/locales": "^1.6",
-        "laravel-lang/native-locale-names": "^1.2",
         "laravel-lang/publisher": "^15.0"
     },
     "require-dev": {
