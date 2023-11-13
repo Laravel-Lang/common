@@ -58,6 +58,7 @@ LocaleData {
   +native: "Deutsch"
   +localized: "Deutsch"
   +regional: "de_DE"
+  +orientation: "left-to-right"
 }
 
 // Aliased
@@ -68,8 +69,10 @@ LocaleData {
   +native: "Deutsch"
   +localized: "Deutsch"
   +regional: "de_DE"
+  +orientation: "left-to-right"
 }
 ```
+
 ```php
 use LaravelLang\Locales\Data\LocaleData;
 use LaravelLang\Locales\Facades\Locales;
@@ -85,8 +88,20 @@ LocaleData {
   +native: "Deutsch"
   +localized: "Tiếng Đức"
   +regional: "de_DE"
+  +orientation: "left-to-right"
+}
+
+LocaleData {
+  +code: "ar"
+  +type: "Arab"
+  +name: "Arabic"
+  +native: "العربية"
+  +localized: "Tiếng Ả Rập"
+  +regional: "ar_AE"
+  +orientation: "right-to-left"
 }
 ```
+
 ```php
 use LaravelLang\Locales\Data\LocaleData;
 use LaravelLang\Locales\Facades\Locales;
@@ -103,6 +118,7 @@ LocaleData {
   +native: "Deutsch"
   +localized: "Deutsch"
   +regional: "de_DE"
+  +orientation: "left-to-right"
 }
 ```
 
