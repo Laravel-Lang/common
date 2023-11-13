@@ -26,7 +26,8 @@ Locales::isInstalled(Locale|string|null $locale): bool
 // The checked locale protecting.
 Locales::isProtected(Locale|string|null $locale): bool
 
-// Validate and returns the correct localization
+// Validate and returns the correct localization.
+// If an uninstalled localization is requested, then it will return the currently active one in the application.
 Locales::get(mixed $locale): LocaleData
 
 // Getting the default localization name.
@@ -34,6 +35,9 @@ Locales::getDefault(): LocaleData
 
 // Getting the fallback localization name.
 Locales::getFallback(): LocaleData
+
+// Receives information about any available localization, otherwise it will return the currently active one in the application.
+Locales::info(mixed $locale): LocaleData
 ```
 
 For example:
@@ -129,7 +133,8 @@ Locales::raw()->isInstalled(Locale|string|null $locale): bool
 // The checked locale protecting.
 Locales::raw()->isProtected(Locale|string|null $locale): bool
 
-// Validate and returns the correct localization
+// Validate and returns the correct localization.
+// If an uninstalled localization is requested, then it will return the currently active one in the application.
 Locales::raw()->get(mixed $locale): string
 
 // Getting the default localization name.
@@ -137,6 +142,9 @@ Locales::raw()->getDefault(): string
 
 // Getting the fallback localization name.
 Locales::raw()->getFallback(): string
+
+// Receives locale code for any available localization, otherwise it will return the currently active one in the application.
+Locales::raw()->info(mixed $locale): string
 ```
 
 For example:
@@ -149,6 +157,7 @@ return Locales::raw()->getDefault();
 // Aliased
 // de-DE
 ```
+
 ```php
 return Locales::raw()->get('de');
 // de
