@@ -4,6 +4,8 @@ import {defaultTheme, viteBundler} from 'vuepress'
 import {docsearchPlugin} from '@vuepress/plugin-docsearch'
 import {containerPlugin} from '@vuepress/plugin-container'
 import {githubLinkifyPlugin} from 'vuepress-plugin-github-linkify'
+import {copyCodePlugin} from "vuepress-plugin-copy-code2";
+import {prismjsPlugin} from '@vuepress/plugin-prismjs'
 
 dotenv.config()
 
@@ -179,6 +181,11 @@ module.exports = {
 
         githubLinkifyPlugin({
             repo: 'Laravel-Lang/common'
+        }),
+
+        copyCodePlugin(),
+        prismjsPlugin({
+            preloadLanguages: ['markdown', 'yaml', 'php', 'shell', 'bash']
         })
     ]
 }

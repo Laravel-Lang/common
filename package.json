@@ -24,10 +24,12 @@
         "docs"
     ],
     "devDependencies": {
-        "@vuepress/plugin-container": "2.0.0-beta.67",
-        "@vuepress/plugin-docsearch": "2.0.0-beta.67",
+        "@vuepress/plugin-container": "2.0.0-beta.68",
+        "@vuepress/plugin-docsearch": "2.0.0-beta.68",
+        "@vuepress/plugin-prismjs": "^2.0.0-beta.68",
         "dotenv": "^16.3.1",
-        "vuepress": "2.0.0-beta.67",
+        "vuepress": "2.0.0-beta.68",
+        "vuepress-plugin-copy-code2": "^2.0.0-beta.250",
         "vuepress-plugin-github-linkify": "^1.2.3"
     },
     "engines": {

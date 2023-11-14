@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import "fonts";
+@import "tables";
 
 :root {
     --content-width: 75%;
@@ -21,6 +22,13 @@
     @media only screen and (min-width: 1921px) {
         --content-width: 1600px;
     }
+}
+
+html.dark {
+    --c-brand: #0e98d7;
+    --c-brand-light: #0e98d7;
+
+    --c-tip: var(--c-brand);
 }
 
 .code-group {
