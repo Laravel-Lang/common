@@ -1,6 +1,6 @@
 # Facades
 
-## With DTOs
+## Data Object
 
 ```php
 use LaravelLang\Locales\Facades\Locales;
@@ -122,7 +122,7 @@ LocaleData {
 }
 ```
 
-## With Raw Data
+## Raw Data
 
 ```php
 use LaravelLang\Locales\Enums\Locale;
