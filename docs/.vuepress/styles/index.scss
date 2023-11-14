@@ -5,6 +5,19 @@
 :root {
     --content-width: 75%;
 
+    --c-brand: #0e98d7;
+    --c-brand-light: #0e98d7;
+
+    --c-bg: #f1f5f9;
+    --c-bg-light: #ffffff;
+  
+    --c-text: #2c3e50;
+    --c-bg-navbar: #ffffff;
+
+    --c-tip: var(--c-brand);
+  
+    --font-family: Nunito, system-ui, sans-serif;
+
     @media only screen and (min-width: 1921px) {
         --content-width: 1600px;
     }
@@ -14,10 +27,4 @@
     &__nav-tab {
         font-family: Nunito, system-ui, sans-serif;
     }
-}
-
-html, body {
-    font-family: Nunito, system-ui, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
 }
