@@ -83,6 +83,18 @@ jobs:
                     sed -i 's/# Completion Status/# Completion Status: HTTP Statuses/g' docs/statuses/http-statuses/index.md
                     sed -i 's/# Completion Status/# Completion Status: Lang/g' docs/statuses/lang/index.md
                     sed -i 's/# Completion Status/# Completion Status: Native Locale Names/g' docs/statuses/native-locale-names/index.md
+            
+            -   name: Resolve navigation links
+                run: |
+                    sed -i 's/<\/table>/<\/table>\n\n[ [go back](..\/index.md) | [to top](\#) ]/g' docs/statuses/attributes/index.md
+                    sed -i 's/<\/table>/<\/table>\n\n[ [go back](..\/index.md) | [to top](\#) ]/g' docs/statuses/http-statuses/index.md
+                    sed -i 's/<\/table>/<\/table>\n\n[ [go back](..\/index.md) | [to top](\#) ]/g' docs/statuses/lang/index.md
+                    sed -i 's/<\/table>/<\/table>\n\n[ [go back](..\/index.md) | [to top](\#) ]/g' docs/statuses/native-locale-names/index.md
+                    
+                    sed -i 's/..\/status.md/..\/index.md/g' docs/statuses/attributes/statuses/*
+                    sed -i 's/..\/status.md/..\/index.md/g' docs/statuses/http-statuses/statuses/*
+                    sed -i 's/..\/status.md/..\/index.md/g' docs/statuses/lang/statuses/*
+                    sed -i 's/..\/status.md/..\/index.md/g' docs/statuses/native-locale-names/statuses/*
 
             -   name: Build VuePress site
                 run: npm run build
