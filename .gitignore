@@ -15,4 +15,3 @@ vendor/
 *.orig
 
 composer.lock
-package-lock.json
