@@ -1,7 +1,7 @@
 # From `laravel-lang/*`
 
 ::: tip
-Check the version of the framework and PHP against the [compatibility](../compatibility/common.md) table.
+Check the version of the framework and PHP against the [support policy](../../prologue/releases.md) table.
 :::
 
 First remove the old dependencies:

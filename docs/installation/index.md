@@ -31,7 +31,7 @@ Now you can manage localizations:
 
 ## Alternative
 
-You can also install certain packages (check the [compatibility tables](compatibility/index.md)):
+You can also install certain packages (check the [support policy](../prologue/releases.md)):
 
 ```bash:no-line-numbers
 composer require --dev laravel-lang/publisher

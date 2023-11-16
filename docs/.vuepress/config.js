@@ -67,8 +67,8 @@ module.exports = {
         sidebar: [
             {
                 text: 'Prologue',
-                collapsible: true,
                 children: [
+                    '/prologue/releases.md',
                     {
                         text: 'Upgrade Guide',
                         children: [
@@ -89,7 +89,6 @@ module.exports = {
                         ]
                     },
 
-                    '/installation/compatibility/support-policy.md',
                     '/installation/about.md'
                 ]
             },
@@ -97,18 +96,6 @@ module.exports = {
                 text: 'Getting Started',
                 children: [
                     '/installation/index.md',
-
-                    {
-                        text: 'Compatibility',
-                        children: [
-                            '/installation/compatibility/common.md',
-                            '/installation/compatibility/publisher.md',
-                            '/installation/compatibility/lang.md',
-                            '/installation/compatibility/attributes.md',
-                            '/installation/compatibility/http-statuses.md'
-                        ]
-                    },
-
                     '/installation/json-fallback-hotfix.md'
                 ]
             },
