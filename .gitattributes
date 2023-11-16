@@ -5,6 +5,7 @@
 
 app/ export-ignore
 docs/ export-ignore
+resources/ export-ignore
 tests/ export-ignore
 
 .env.example export-ignore
@@ -14,5 +15,8 @@ tests/ export-ignore
 .gitignore export-ignore
 
 package.json export-ignore
+package-lock.json export-ignore
 
 phpunit.xml export-ignore
+
+README.md export-ignore
