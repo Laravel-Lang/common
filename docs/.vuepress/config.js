@@ -59,6 +59,7 @@ module.exports = {
                     {text: 'HTTP Statuses', link: '/statuses/http-statuses/index.md'},
                     {text: 'Native Locale Names', link: '/statuses/native-locale-names/index.md'},
                     {text: 'Native Country Names', link: '/statuses/native-country-names/index.md'},
+                    {text: 'Native Currency Names', link: '/statuses/native-currency-names/index.md'},
                 ]
             },
         ],
@@ -141,6 +142,7 @@ module.exports = {
                             '/usage/features/locale-list.md',
                             '/usage/features/native-locale-names.md',
                             '/usage/features/native-country-names.md',
+                            '/usage/features/native-currency-names.md',
                             '/usage/features/alignment.md',
                             '/usage/features/smart-punctuation.md',
                         ]
