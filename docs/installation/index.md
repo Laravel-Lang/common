@@ -41,5 +41,6 @@ composer require --dev laravel-lang/attributes
 composer require --dev laravel-lang/http-statuses
 
 composer require laravel-lang/locales
+composer require laravel-lang/locale-list
 composer require laravel-lang/native-locale-names
 ```

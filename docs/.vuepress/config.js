@@ -137,6 +137,7 @@ module.exports = {
                         text: 'Features',
                         children: [
                             '/usage/features/facades.md',
+                            '/usage/features/locale-list.md',
                             '/usage/features/native-locale-names.md',
                             '/usage/features/alignment.md',
                             '/usage/features/smart-punctuation.md',

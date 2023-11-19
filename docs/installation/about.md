@@ -81,3 +81,9 @@ This package solves this problem.
 This package contains a list of localized language names.
 
 I think there is no need to explain why it can be useful 🙂
+
+## `laravel-lang/locale-list`
+
+This package contains a list of available locales that all Laravel Lang Team packages work with.
+
+All it contains is a single enum class that you can also use for your own purposes. 
