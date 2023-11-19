@@ -12,14 +12,21 @@ php artisan lang:update
 
 ## Recommended
 
-To get the latest version of `Laravel Lang: Common`, simply require the project using [Composer](https://getcomposer.org):
+To get the latest version of `Laravel Lang: Common`, simply require the project
+using [Composer](https://getcomposer.org):
 
 ```bash:no-line-numbers
 composer require --dev laravel-lang/common
 ```
 
 ::: tip
-If you are using the list of localizations from the `Laravel Lang: Publisher` package in production, then use this command instead: `composer require laravel-lang/common`.
+If you need a list of locales in production, separately install the `laravel-lang/locales` dependency by calling the
+console command:
+
+```bash:no-line-numbers
+composer require laravel-lang/locales
+```
+
 :::
 
 Now you can manage localizations:
@@ -43,4 +50,5 @@ composer require --dev laravel-lang/http-statuses
 composer require laravel-lang/locales
 composer require laravel-lang/locale-list
 composer require laravel-lang/native-locale-names
+composer require laravel-lang/native-country-names
 ```

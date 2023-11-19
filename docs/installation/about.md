@@ -78,7 +78,13 @@ This package solves this problem.
 
 ## `laravel-lang/native-locale-names`
 
-This package contains a list of localized language names.
+This package contains a list of localized locale names.
+
+I think there is no need to explain why it can be useful 🙂
+
+## `laravel-lang/native-country-names`
+
+This package contains a list of localized country names.
 
 I think there is no need to explain why it can be useful 🙂
 
