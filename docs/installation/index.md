@@ -51,4 +51,5 @@ composer require laravel-lang/locales
 composer require laravel-lang/locale-list
 composer require laravel-lang/native-locale-names
 composer require laravel-lang/native-country-names
+composer require laravel-lang/native-currency-names
 ```

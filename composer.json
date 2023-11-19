@@ -54,6 +54,7 @@
         "laravel-lang/locale-list": "^1.0",
         "laravel-lang/locales": "^1.9",
         "laravel-lang/native-country-names": "^1.0",
+        "laravel-lang/native-currency-names": "^1.0",
         "laravel-lang/native-locale-names": "^1.4",
         "laravel-lang/publisher": "^15.0"
     },

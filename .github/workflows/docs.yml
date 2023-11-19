@@ -53,12 +53,14 @@ jobs:
                     rm -rf docs/statuses/lang
                     rm -rf docs/statuses/native-locale-names
                     rm -rf docs/statuses/native-country-names
+                    rm -rf docs/statuses/native-currency-names
                     
                     mkdir docs/statuses/attributes
                     mkdir docs/statuses/http-statuses
                     mkdir docs/statuses/lang
                     mkdir docs/statuses/native-locale-names
                     mkdir docs/statuses/native-country-names
+                    mkdir docs/statuses/native-currency-names
             
             -   name: Download repositories
                 run: |
@@ -67,6 +69,7 @@ jobs:
                     git clone --no-tags --single-branch https://github.com/Laravel-Lang/lang.git tmp/lang
                     git clone --no-tags --single-branch https://github.com/Laravel-Lang/native-locale-names.git tmp/native-locale-names
                     git clone --no-tags --single-branch https://github.com/Laravel-Lang/native-country-names.git tmp/native-country-names
+                    git clone --no-tags --single-branch https://github.com/Laravel-Lang/native-currency-names.git tmp/native-currency-names
             
             -   name: Move translation statuses
                 run: |
@@ -75,12 +78,14 @@ jobs:
                     mv -f tmp/lang/docs/status.md docs/statuses/lang/index.md
                     mv -f tmp/native-locale-names/docs/status.md docs/statuses/native-locale-names/index.md
                     mv -f tmp/native-country-names/docs/status.md docs/statuses/native-country-names/index.md
+                    mv -f tmp/native-currency-names/docs/status.md docs/statuses/native-currency-names/index.md
                     
                     mv -f tmp/attributes/docs/statuses docs/statuses/attributes/statuses
                     mv -f tmp/http-statuses/docs/statuses docs/statuses/http-statuses/statuses
                     mv -f tmp/lang/docs/statuses docs/statuses/lang/statuses
                     mv -f tmp/native-locale-names/docs/statuses docs/statuses/native-locale-names/statuses
                     mv -f tmp/native-country-names/docs/statuses docs/statuses/native-country-names/statuses
+                    mv -f tmp/native-currency-names/docs/statuses docs/statuses/native-currency-names/statuses
             
             -   name: Resolve page names
                 run: |
@@ -88,7 +93,8 @@ jobs:
                     sed -i 's/# Completion Status/# Completion Status: HTTP Statuses/g' docs/statuses/http-statuses/index.md
                     sed -i 's/# Completion Status/# Completion Status: Lang/g' docs/statuses/lang/index.md
                     sed -i 's/# Completion Status/# Completion Status: Native Locale Names/g' docs/statuses/native-locale-names/index.md
-                    sed -i 's/# Completion Status/# Completion Status: Native Locale Names/g' docs/statuses/native-country-names/index.md
+                    sed -i 's/# Completion Status/# Completion Status: Native Country Names/g' docs/statuses/native-country-names/index.md
+                    sed -i 's/# Completion Status/# Completion Status: Native Currency Names/g' docs/statuses/native-currency-names/index.md
             
             -   name: Resolve navigation links
                 run: |
@@ -97,12 +103,14 @@ jobs:
                     sed -i 's/<\/table>/<\/table>\n\n[ [go back](..\/index.md) | [to top](\#) ]/g' docs/statuses/lang/index.md
                     sed -i 's/<\/table>/<\/table>\n\n[ [go back](..\/index.md) | [to top](\#) ]/g' docs/statuses/native-locale-names/index.md
                     sed -i 's/<\/table>/<\/table>\n\n[ [go back](..\/index.md) | [to top](\#) ]/g' docs/statuses/native-country-names/index.md
+                    sed -i 's/<\/table>/<\/table>\n\n[ [go back](..\/index.md) | [to top](\#) ]/g' docs/statuses/native-currency-names/index.md
                     
                     sed -i 's/..\/status.md/..\/index.md/g' docs/statuses/attributes/statuses/*
                     sed -i 's/..\/status.md/..\/index.md/g' docs/statuses/http-statuses/statuses/*
                     sed -i 's/..\/status.md/..\/index.md/g' docs/statuses/lang/statuses/*
                     sed -i 's/..\/status.md/..\/index.md/g' docs/statuses/native-locale-names/statuses/*
                     sed -i 's/..\/status.md/..\/index.md/g' docs/statuses/native-country-names/statuses/*
+                    sed -i 's/..\/status.md/..\/index.md/g' docs/statuses/native-currency-names/statuses/*
 
             -   name: Build VuePress site
                 run: npm run build
