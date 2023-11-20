@@ -56,10 +56,7 @@ module.exports = {
                 children: [
                     {text: 'Lang', link: '/statuses/lang/index.md'},
                     {text: 'Attributes', link: '/statuses/attributes/index.md'},
-                    {text: 'HTTP Statuses', link: '/statuses/http-statuses/index.md'},
-                    {text: 'Native Locale Names', link: '/statuses/native-locale-names/index.md'},
-                    {text: 'Native Country Names', link: '/statuses/native-country-names/index.md'},
-                    {text: 'Native Currency Names', link: '/statuses/native-currency-names/index.md'},
+                    {text: 'HTTP Statuses', link: '/statuses/http-statuses/index.md'}
                 ]
             },
         ],
