@@ -1,5 +1,0 @@
-[
-    { "version": "main", "url": "/main/", "isCurrent": false },
-    { "version": "6.x", "url": "/6.x/", "isCurrent": true },
-    { "version": "5.x", "url": "/5.x/", "isCurrent": false }
-]
