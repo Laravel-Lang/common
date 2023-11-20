@@ -78,6 +78,22 @@ This package solves this problem.
 
 ## `laravel-lang/native-locale-names`
 
-This package contains a list of localized language names.
+This package contains a list of localized locale names.
 
 I think there is no need to explain why it can be useful 🙂
+
+## `laravel-lang/native-country-names`
+
+This package contains a list of localized country names.
+
+I think there is no need to explain why it can be useful 🙂
+
+## `laravel-lang/native-currency-names`
+
+This package contains a list of localized currency names with their codes.
+
+## `laravel-lang/locale-list`
+
+This package contains a list of available locales that all Laravel Lang Team packages work with.
+
+All it contains is a single enum class that you can also use for your own purposes. 

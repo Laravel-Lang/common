@@ -1,7 +1,7 @@
 # Native Locale Names
 
 If you want to get a localized list of languages, then simply call the `Native::get()` method from
-the [`laravel-lang/native-locale-names`](../../installation/index.md) package.
+the [`laravel-lang/native-locale-names`](../../installation/index.md#alternative) package.
 
 ## Localized Names
 
