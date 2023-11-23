@@ -1,7 +1,0 @@
-## {{native}}
-
-The {{locale}} locale is added using the console command:
-
-```bash:no-line-numbers
-php artisan lang:add {{code}}
-```
