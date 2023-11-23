@@ -4,8 +4,6 @@
 .run/ export-ignore
 
 app/ export-ignore
-docs/ export-ignore
-resources/ export-ignore
 tests/ export-ignore
 
 .env.example export-ignore
