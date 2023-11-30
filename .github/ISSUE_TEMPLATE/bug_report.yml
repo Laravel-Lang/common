@@ -17,7 +17,6 @@ body:
             label: Lang Package Name
             description: The name of the package in which the bug was found.
             placeholder: laravel-lang/common
-            value: laravel-lang/common
         validations:
             required: true
 
@@ -46,6 +45,16 @@ body:
             placeholder: 8.2.12
         validations:
             required: true
+
+    -   type: textarea
+        id: dependencies
+        attributes:
+            label: Dependencies
+            description: |
+                Provide the contents of the "require" and "require-dev" blocks from the "composer.json" file if you can.
+            placeholder: {\"require\": {...}, \"require-dev\": {...}}
+        validations:
+            required: false
 
     -   type: textarea
         id: description
