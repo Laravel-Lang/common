@@ -52,7 +52,6 @@ body:
             label: Dependencies
             description: |
                 Provide the contents of the "require" and "require-dev" blocks from the "composer.json" file if you can.
-            placeholder: {\"require\": {...}, \"require-dev\": {...}}
         validations:
             required: false
 
