@@ -51,7 +51,7 @@ body:
         attributes:
             label: Dependencies
             description: |
-                Provide the contents of the "require" and "require-dev" blocks from the "composer.json" file if you can.
+                Provide the `require` and `require-dev` sections content from the `composer.json` file if you can.
         validations:
             required: false
 
