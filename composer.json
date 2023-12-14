@@ -5,9 +5,11 @@
     "type": "library",
     "keywords": [
         "laravel-lang",
+        "actions",
         "attribute",
         "attributes",
         "breeze",
+        "buttons",
         "cashier",
         "fortify",
         "framework",
@@ -48,6 +50,7 @@
     },
     "require": {
         "php": "^8.1",
+        "laravel-lang/actions": "^1.0",
         "laravel-lang/attributes": "^2.5.0",
         "laravel-lang/http-statuses": "^3.5.0",
         "laravel-lang/lang": "^13.3.0",
@@ -62,7 +65,7 @@
         "dragon-code/support": "^6.11",
         "orchestra/testbench": "^8.14",
         "phpunit/phpunit": "^10.4.2",
-        "symfony/var-dumper": "^6.3.6"
+        "symfony/var-dumper": "^6.3 || ^7.0"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
