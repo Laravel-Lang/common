@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Services;
 
 use DragonCode\Support\Facades\Filesystem\File;
-use LaravelLang\Locales\Enums\Locale;
+use LaravelLang\LocaleList\Locale;
 
 class Locales
 {
