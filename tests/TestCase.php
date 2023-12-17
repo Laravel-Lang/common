@@ -8,7 +8,7 @@ use DragonCode\Support\Facades\Filesystem\Directory;
 use LaravelLang\Attributes\ServiceProvider as AttributesServiceProvider;
 use LaravelLang\HttpStatuses\ServiceProvider as HttpStatusesServiceProvider;
 use LaravelLang\Lang\ServiceProvider as LangServiceProvider;
-use LaravelLang\Locales\Enums\Locale;
+use LaravelLang\LocaleList\Locale;
 use LaravelLang\Locales\ServiceProvider as LocalesServiceProvider;
 use LaravelLang\Publisher\ServiceProvider as PublisherServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;

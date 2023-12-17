@@ -50,22 +50,20 @@
     },
     "require": {
         "php": "^8.1",
-        "laravel-lang/actions": "^1.0",
-        "laravel-lang/attributes": "^2.5.0",
-        "laravel-lang/http-statuses": "^3.5.0",
-        "laravel-lang/lang": "^13.3.0",
+        "laravel-lang/actions": "^1.1",
+        "laravel-lang/attributes": "^2.7",
+        "laravel-lang/http-statuses": "^3.7",
+        "laravel-lang/json-fallback": "^2.0",
+        "laravel-lang/lang": "^13.12",
         "laravel-lang/locale-list": "^1.1",
-        "laravel-lang/locales": "^1.9",
-        "laravel-lang/native-country-names": "^1.0",
-        "laravel-lang/native-currency-names": "^1.1",
-        "laravel-lang/native-locale-names": "^1.4",
-        "laravel-lang/publisher": "^15.0"
+        "laravel-lang/locales": "^2.3",
+        "laravel-lang/publisher": "^16.0"
     },
     "require-dev": {
-        "dragon-code/support": "^6.11",
-        "orchestra/testbench": "^8.14",
-        "phpunit/phpunit": "^10.4.2",
-        "symfony/var-dumper": "^6.3 || ^7.0"
+        "dragon-code/support": "^6.12",
+        "orchestra/testbench": "^8.17",
+        "phpunit/phpunit": "^10.5.3",
+        "symfony/var-dumper": "^6.4 || ^7.0"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,

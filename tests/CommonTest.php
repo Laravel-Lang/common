@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use LaravelLang\Locales\Enums\Locale;
+use LaravelLang\LocaleList\Locale;
 
 class CommonTest extends TestCase
 {
