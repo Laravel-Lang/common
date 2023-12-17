@@ -55,7 +55,6 @@
         "laravel-lang/http-statuses": "^3.7",
         "laravel-lang/json-fallback": "^2.0",
         "laravel-lang/lang": "^13.12",
-        "laravel-lang/locale-list": "^1.1",
         "laravel-lang/locales": "^2.3",
         "laravel-lang/publisher": "^16.0"
     },
