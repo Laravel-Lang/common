@@ -13,8 +13,9 @@ jobs:
             matrix:
                 php: [ "8.1", "8.2", "8.3" ]
                 laravel: [ "10.0" ]
+                package_lang: [ "13.0", "14.0" ]
 
-        name: PHP ${{ matrix.php }}, Laravel ${{ matrix.laravel }}
+        name: PHP ${{ matrix.php }}, Laravel ${{ matrix.laravel }}, Lang ${{ matrix.package_lang }}
 
         steps:
             -   name: Checkout code
@@ -30,7 +31,7 @@ jobs:
                     COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
             -   name: Install dependencies
-                run: composer require laravel/framework:^${{ matrix.laravel }}
+                run: composer require laravel/framework:^${{ matrix.laravel }} laravel-lang/lang:^${{ matrix.package_lang }}
 
             -   name: Execute tests
                 run: sudo vendor/bin/phpunit
