@@ -60,7 +60,7 @@
     },
     "require-dev": {
         "dragon-code/support": "^6.12",
-        "orchestra/testbench": "^8.17",
+        "orchestra/testbench": "^8.17 || ^9.0",
         "phpunit/phpunit": "^10.5.3",
         "symfony/var-dumper": "^6.4 || ^7.0"
     },
