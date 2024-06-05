@@ -6,6 +6,7 @@ namespace Tests;
 
 use DragonCode\Support\Facades\Filesystem\Directory;
 use LaravelLang\Attributes\ServiceProvider as AttributesServiceProvider;
+use LaravelLang\Config\ServiceProvider as ConfigServiceProvider;
 use LaravelLang\HttpStatuses\ServiceProvider as HttpStatusesServiceProvider;
 use LaravelLang\Lang\ServiceProvider as LangServiceProvider;
 use LaravelLang\LocaleList\Locale;
@@ -30,6 +31,7 @@ abstract class TestCase extends BaseTestCase
             AttributesServiceProvider::class,
             HttpStatusesServiceProvider::class,
             PublisherServiceProvider::class,
+            ConfigServiceProvider::class,
         ];
     }
 
