@@ -56,7 +56,8 @@
         "laravel-lang/json-fallback": "^2.1",
         "laravel-lang/lang": "^13.12 || ^14.0 || ^15.5.1",
         "laravel-lang/locales": "^2.8",
-        "laravel-lang/publisher": "^16.4"
+        "laravel-lang/publisher": "^16.4",
+        "laravel-lang/routes": "^1.0"
     },
     "require-dev": {
         "dragon-code/support": "^6.13",
