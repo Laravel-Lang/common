@@ -3,7 +3,6 @@
 ![laravel-lang localize-your-app](https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&preposition=with&mode=dark)
 
 [![Stable Version][badge_stable]][link_packagist]
-[![Unstable Version][badge_unstable]][link_packagist]
 [![Total Downloads][badge_downloads]][link_packagist]
 [![Github Workflow Status][badge_build]][link_build]
 [![License][badge_license]][link_license]
@@ -36,8 +35,6 @@ This package is licensed under the [MIT License](https://laravel-lang.com/licens
 [badge_license]:        https://img.shields.io/packagist/l/laravel-lang/common.svg?style=flat-square
 
 [badge_stable]:         https://img.shields.io/github/v/release/laravel-lang/common?label=stable&style=flat-square
-
-[badge_unstable]:       https://img.shields.io/badge/unstable-dev--main-orange?style=flat-square
 
 [link_build]:           https://github.com/laravel-lang/common/actions
 
