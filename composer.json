@@ -53,7 +53,7 @@
         "php": "^8.1",
         "laravel-lang/actions": "^1.9",
         "laravel-lang/attributes": "^2.12",
-        "laravel-lang/http-statuses": "^3.10",
+        "laravel-lang/http-statuses": "^3.8",
         "laravel-lang/json-fallback": "^2.2",
         "laravel-lang/lang": "^13.12 || ^14.0 || ^15.5.1",
         "laravel-lang/locales": "^2.10",
