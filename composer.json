@@ -60,7 +60,8 @@
         "laravel-lang/models": "^1.3",
         "laravel-lang/moonshine": "^1.2",
         "laravel-lang/publisher": "^16.5",
-        "laravel-lang/routes": "^1.7"
+        "laravel-lang/routes": "^1.7",
+        "laravel-lang/starter-kits": "^1.0"
     },
     "require-dev": {
         "dragon-code/support": "^6.13",
