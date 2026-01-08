@@ -1,6 +1,6 @@
 # Laravel Lang
 
-![laravel-lang localize-your-app](https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&preposition=with&mode=dark)
+![laravel-lang localize-your-app](https://banners.beyondco.de/Localize%20Application.png?theme=light&packageManager=composer+require&packageName=laravel-lang%2Fcommon+--dev&pattern=topography&style=style_1&description=with+Laravel+Lang&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg)
 
 [![Stable Version][badge_stable]][link_packagist]
 [![Total Downloads][badge_downloads]][link_packagist]
