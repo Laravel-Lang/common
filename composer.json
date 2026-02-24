@@ -75,9 +75,9 @@
     },
     "require-dev": {
         "dragon-code/support": "^6.13",
-        "orchestra/testbench": "^8.17 || ^9.1.2 || ^10.0",
+        "orchestra/testbench": "^8.17 || ^9.1.2 || ^10.0 || ^11.0",
         "phpunit/phpunit": "^10.5.20 || ^11.0 || ^12.0",
-        "symfony/var-dumper": "^6.4 || ^7.1.1"
+        "symfony/var-dumper": "^6.4 || ^7.1.1 || ^8.0"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
