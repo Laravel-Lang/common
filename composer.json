@@ -1,0 +1,90 @@
+{
+    "name": "laravel-lang/common",
+    "description": "Easily connect the necessary language packs to the application",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "laravel-lang",
+        "actions",
+        "attribute",
+        "attributes",
+        "breeze",
+        "buttons",
+        "cashier",
+        "fortify",
+        "framework",
+        "http",
+        "http-status",
+        "http-status-code",
+        "i18n",
+        "jetstream",
+        "lang",
+        "language",
+        "languages",
+        "laravel",
+        "locale",
+        "locales",
+        "localization",
+        "localizations",
+        "moonshine",
+        "nova",
+        "publisher",
+        "spark",
+        "translation",
+        "translations",
+        "ui"
+    ],
+    "authors": [
+        {
+            "name": "Laravel-Lang Team",
+            "homepage": "https://github.com/Laravel-Lang"
+        },
+        {
+            "name": "Andrey Helldar",
+            "email": "helldar@dragon-code.pro",
+            "homepage": "https://dragon-code.pro"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Laravel-Lang/common/issues",
+        "source": "https://github.com/Laravel-Lang/common"
+    },
+    "require": {
+        "php": "^8.1",
+        "laravel-lang/actions": "^1.8.3",
+        "laravel-lang/attributes": "^2.10.7",
+        "laravel-lang/http-statuses": "^3.8.3",
+        "laravel-lang/json-fallback": "^2.1",
+        "laravel-lang/lang": "^13.12 || ^14.0 || ^15.5.1",
+        "laravel-lang/locales": "^2.8",
+        "laravel-lang/models": "^1.0",
+        "laravel-lang/moonshine": "^1.0",
+        "laravel-lang/publisher": "^16.4",
+        "laravel-lang/routes": "^1.0"
+    },
+    "require-dev": {
+        "dragon-code/support": "^6.13",
+        "orchestra/testbench": "^8.17 || ^9.1.2",
+        "phpunit/phpunit": "^10.5.20",
+        "symfony/var-dumper": "^6.4 || ^7.1.1"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload-dev": {
+        "psr-4": {
+            "App\\": "app/",
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "dragon-code/codestyler": true,
+            "ergebnis/composer-normalize": true,
+            "friendsofphp/php-cs-fixer": true,
+            "symfony/thanks": true
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
