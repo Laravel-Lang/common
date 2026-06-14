@@ -1,6 +1,9 @@
 # Laravel Lang
 
-![laravel-lang localize-your-app](https://preview.dragon-code.pro/laravel-lang/localize-your-app.svg?brand=laravel&preposition=with&mode=dark)
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://banners.beyondco.de/Common.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&icon=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg&theme=dark&packageManager=composer+require+--dev&packageName=laravel-lang%2Fcommon&description=by+Laravel+Lang&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg">
+    <img src="https://banners.beyondco.de/Common.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&icon=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg&theme=light&packageManager=composer+require+--dev&packageName=laravel-lang%2Fcommon&description=by+Laravel+Lang&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg" alt="Common">
+</picture>
 
 [![Stable Version][badge_stable]][link_packagist]
 [![Total Downloads][badge_downloads]][link_packagist]
@@ -10,10 +13,6 @@
 ## Documentation
 
 See the [documentation](https://laravel-lang.com/packages-common.html) for detailed installation.
-
-## Communication
-
-We also have official [chats](https://t.me/addlist/l0XGtvEIBiljMTMy) in Telegram.
 
 ## Contributing
 
