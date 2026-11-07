@@ -46,7 +46,7 @@ jobs:
                     COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
             -   name: Install dependencies
-                run: composer require laravel/framework:^${{ matrix.laravel }} laravel-lang/lang:^${{ matrix.package_lang }}
+                run: composer require --no-blocking laravel/framework:^${{ matrix.laravel }} laravel-lang/lang:^${{ matrix.package_lang }}
 
             -   name: Execute tests
                 run: sudo vendor/bin/phpunit
