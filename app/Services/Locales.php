@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Services;
 
-use DragonCode\Support\Facades\Filesystem\File;
 use LaravelLang\LocaleList\Locale;
 
 class Locales
@@ -48,12 +47,12 @@ class Locales
 
     protected static function availableNames(): array
     {
-        return File::load(__DIR__ . '/../../vendor/laravel-lang/native-locale-names/source/locales.json');
+        return static::load(__DIR__ . '/../../vendor/laravel-lang/native-locale-names/source/locales.json');
     }
 
     protected static function availableNatives(): array
     {
-        return File::load(__DIR__ . '/../../vendor/laravel-lang/native-locale-names/locales/_native/json.json');
+        return static::load(__DIR__ . '/../../vendor/laravel-lang/native-locale-names/locales/_native/json.json');
     }
 
     protected static function compilePage(array $locales): string
@@ -63,6 +62,17 @@ class Locales
 
     protected static function store(string $content): void
     {
-        File::store(static::$filePath, $content);
+        $directory = dirname(static::$filePath);
+
+        if (! is_dir($directory)) {
+            mkdir($directory, 0o755, true);
+        }
+
+        file_put_contents(static::$filePath, $content);
+    }
+
+    protected static function load(string $path): array
+    {
+        return json_decode(file_get_contents($path), true, 512, JSON_THROW_ON_ERROR);
     }
 }
