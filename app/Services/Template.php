@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace App\Services;
 
-use DragonCode\Support\Facades\Helpers\Str;
-
 class Template
 {
     protected static ?string $localeStub = null;
@@ -14,18 +12,35 @@ class Template
 
     public static function locale(string $code, array $names, array $natives): string
     {
-        return Str::replaceFormat(static::localeStub(), [
+        return static::replace(static::localeStub(), [
             'code'   => $code,
-            'locale' => Str::title($names[$code]),
-            'native' => Str::title($natives[$code]),
-        ], '{{%s}}');
+            'locale' => static::title($names[$code]),
+            'native' => static::title($natives[$code]),
+        ]);
     }
 
     public static function page(array $locales): string
     {
-        return Str::replaceFormat(static::pageStub(), [
+        return static::replace(static::pageStub(), [
             'content' => implode(PHP_EOL . PHP_EOL, $locales),
-        ], '{{%s}}');
+        ]);
+    }
+
+    /** @param  array<string, string>  $values */
+    protected static function replace(string $stub, array $values): string
+    {
+        $replace = [];
+
+        foreach ($values as $key => $value) {
+            $replace['{{' . $key . '}}'] = $value;
+        }
+
+        return strtr($stub, $replace);
+    }
+
+    protected static function title(string $value): string
+    {
+        return mb_convert_case($value, MB_CASE_TITLE, 'UTF-8');
     }
 
     protected static function localeStub(): string
