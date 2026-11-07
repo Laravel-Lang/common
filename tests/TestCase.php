@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use DragonCode\Support\Facades\Filesystem\Directory;
+use Illuminate\Filesystem\Filesystem;
 use LaravelLang\Attributes\ServiceProvider as AttributesServiceProvider;
 use LaravelLang\Config\ServiceProvider as ConfigServiceProvider;
 use LaravelLang\HttpStatuses\ServiceProvider as HttpStatusesServiceProvider;
@@ -37,8 +37,10 @@ abstract class TestCase extends BaseTestCase
 
     protected function cleanUp(): void
     {
-        Directory::ensureDelete($this->langPath());
-        Directory::ensureDirectory($this->langPath(Locale::English));
+        $files = new Filesystem;
+
+        $files->deleteDirectory($this->langPath());
+        $files->ensureDirectoryExists($this->langPath(Locale::English));
     }
 
     protected function langPath(?Locale $locale = null): string
