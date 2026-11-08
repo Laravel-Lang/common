@@ -1,0 +1,17 @@
+.idea/
+_site/
+build/
+node_modules/
+tmp/
+vendor/
+
+.DS_Store
+.env
+.temp
+
+*.bak
+*.cache
+*.clover
+*.orig
+
+composer.lock
