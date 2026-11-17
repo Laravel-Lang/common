@@ -18,10 +18,6 @@ See the [documentation](https://laravel-lang.com/packages-common.html) for detai
 
 Please see [CONTRIBUTING](https://laravel-lang.com/contributions.html) for details.
 
-## Support Us
-
-❤️ Laravel Lang? Please consider supporting our collective on [Boosty](https://boosty.to/laravel-lang).
-
 ## License
 
 This package is licensed under the [MIT License](https://laravel-lang.com/license.html).
