@@ -5,40 +5,21 @@
     "type": "library",
     "keywords": [
         "laravel-lang",
-        "actions",
-        "attribute",
         "attributes",
-        "breeze",
-        "buttons",
-        "cashier",
-        "fortify",
-        "framework",
-        "http",
-        "http-status",
-        "http-status-code",
+        "http-status-codes",
         "i18n",
-        "jetstream",
         "lang",
         "language",
-        "languages",
-        "laravel",
         "locale",
         "locales",
         "localization",
-        "localizations",
-        "moonshine",
-        "nova",
-        "publisher",
-        "spark",
         "translation",
-        "translations",
-        "ui"
+        "translations"
     ],
     "authors": [
         {
             "name": "Andrey Helldar",
-            "email": "helldar@dragon-code.pro",
-            "homepage": "https://dragon-code.pro"
+            "email": "helldar@dragon-code.pro"
         },
         {
             "name": "Laravel-Lang Team",
@@ -52,23 +33,21 @@
         "php": "^8.3",
         "laravel-lang/actions": "self.version",
         "laravel-lang/attributes": "self.version",
+        "laravel-lang/country-names": "self.version",
+        "laravel-lang/currency-names": "self.version",
         "laravel-lang/http-statuses": "self.version",
         "laravel-lang/json-fallback": "self.version",
         "laravel-lang/lang": "self.version",
+        "laravel-lang/locale-names": "self.version",
         "laravel-lang/locales": "self.version",
         "laravel-lang/models": "self.version",
         "laravel-lang/moonshine": "self.version",
-        "laravel-lang/publisher": "self.version",
         "laravel-lang/routes": "self.version",
         "laravel-lang/starter-kits": "self.version"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
-        "allow-plugins": {
-            "ergebnis/composer-normalize": true,
-            "laravel/pint": true
-        },
         "preferred-install": "dist",
         "sort-packages": true
     }
