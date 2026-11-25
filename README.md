@@ -12,7 +12,7 @@
 
 ## Documentation
 
-See the [documentation](https://laravel-lang.com/start) for detailed information.
+[Install Common and publish your first translations.](https://laravel-lang.com/start)
 
 ## Contributing
 
